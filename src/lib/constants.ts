@@ -3,7 +3,7 @@ export const SITE = {
   title: "Upward Media | Digital Agency",
   description:
     "Transformamos ideias em experiências digitais que geram resultados reais para o seu negócio.",
-  url: "https://upwardmedia.com.br",
+  url: "https://upwardbr.com",
   whatsapp: "https://wa.me/5535989896851",
 };
 

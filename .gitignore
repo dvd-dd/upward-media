@@ -26,10 +26,23 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
+
+# editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+
+# secrets
+*.key
+*.cert
 
 # typescript
 *.tsbuildinfo
