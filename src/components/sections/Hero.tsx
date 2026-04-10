@@ -176,14 +176,14 @@ export default function Hero() {
           >
             <MagneticButton
               as="a"
-              href="#contact"
+              href="/#contact"
               className="gradient-primary text-background px-8 py-3.5 rounded-full text-sm font-semibold transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(0,212,170,0.45),0_0_60px_rgba(0,212,170,0.15)]"
             >
               Start a Project
             </MagneticButton>
             <MagneticButton
               as="a"
-              href="#portfolio"
+              href="/#portfolio"
               className="px-8 py-3.5 rounded-full text-sm font-semibold border border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
             >
               See Our Work

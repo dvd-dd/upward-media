@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -11,9 +11,10 @@ import {
   Headphones,
   ArrowRight,
 } from "lucide-react";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, SERVICE_DETAILS } from "@/lib/constants";
 import GlowCard from "@/components/ui/GlowCard";
 import TextReveal from "@/components/ui/TextReveal";
+import BubbleModal from "@/components/ui/BubbleModal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,8 +26,20 @@ const iconMap = {
   Headphones,
 } as const;
 
+interface ModalService {
+  icon: (typeof iconMap)[keyof typeof iconMap];
+  title: string;
+  description: string;
+  fullDescription: string;
+  features: string[];
+  color: "primary" | "accent";
+}
+
 export default function Services() {
   const cardsRef = useRef<HTMLDivElement>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalService, setModalService] = useState<ModalService | null>(null);
+  const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
 
   useEffect(() => {
     const el = cardsRef.current;
@@ -55,6 +68,27 @@ export default function Services() {
       anim.scrollTrigger?.kill();
     };
   }, []);
+
+  const openModal = useCallback(
+    (index: number, cardEl: HTMLElement) => {
+      const service = SERVICES[index];
+      const details = SERVICE_DETAILS[service.title];
+      const Icon = iconMap[service.icon];
+      const color: "primary" | "accent" = index % 2 === 0 ? "primary" : "accent";
+
+      setAnchorRect(cardEl.getBoundingClientRect());
+      setModalService({
+        icon: Icon,
+        title: service.title,
+        description: service.description,
+        fullDescription: details.fullDescription,
+        features: details.features,
+        color,
+      });
+      setModalOpen(true);
+    },
+    []
+  );
 
   return (
     <section id="services" className="relative py-32 bg-background">
@@ -114,19 +148,33 @@ export default function Services() {
                 {service.description}
               </p>
 
-              <span
-                className={`inline-flex items-center gap-1.5 text-sm font-medium ${iconColor} group cursor-pointer`}
+              <button
+                onClick={(e) => {
+                  const card = (e.currentTarget as HTMLElement).closest(
+                    "[data-service-card]"
+                  ) as HTMLElement;
+                  openModal(i, card);
+                }}
+                className={`inline-flex items-center gap-1.5 text-sm font-medium ${iconColor} group cursor-pointer bg-transparent border-none p-0 text-left`}
               >
                 Learn more
                 <ArrowRight
                   size={14}
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
-              </span>
+              </button>
             </GlowCard>
           );
         })}
       </div>
+
+      {/* Bubble Modal */}
+      <BubbleModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        service={modalService}
+        anchorRect={anchorRect}
+      />
     </section>
   );
 }

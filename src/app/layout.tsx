@@ -67,7 +67,7 @@ const jsonLd = JSON.stringify({
   description:
     "Performance-driven digital agency offering web development, branding, digital marketing, and ongoing support.",
   url: "https://upwardbr.com",
-  email: "azevedoesilva_luiz@outlook.com",
+  // email: "azevedoesilva_luiz@outlook.com",
   telephone: "+5535989896851",
   sameAs: [],
   serviceType: [

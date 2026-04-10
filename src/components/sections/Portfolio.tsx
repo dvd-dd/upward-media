@@ -34,12 +34,10 @@ function PortfolioCard({
     setTransform("");
   };
 
-  const isFeatured = "featured" in project && project.featured;
-
   return (
     <Link
       href={`/portfolio/${project.slug}`}
-      className={`block ${isFeatured ? "md:col-span-2" : ""}`}
+      className="block"
     >
       <div
         ref={cardRef}
@@ -55,21 +53,13 @@ function PortfolioCard({
         onMouseLeave={handleMouseLeave}
       >
         {/* Image */}
-        <div
-          className={`relative overflow-hidden ${
-            isFeatured ? "aspect-[16/9]" : "aspect-[4/3]"
-          }`}
-        >
+        <div className="relative overflow-hidden aspect-[4/3]">
           <Image
             src={project.image}
             alt={project.title}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes={
-              isFeatured
-                ? "(max-width: 768px) 100vw, 66vw"
-                : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            }
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
 
           {/* Hover overlay */}

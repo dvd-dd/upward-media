@@ -16,6 +16,8 @@ import {
   MessageSquare,
   Wrench,
   Handshake,
+  ShieldCheck,
+  DollarSign,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -81,19 +83,41 @@ const voicePillars = [
   {
     icon: MessageSquare,
     title: "Straight to the Point",
-    description: "No fluff. Clear communication that respects people's time.",
+    description:
+      "No marketing fluff. We speak the language of those who work with greasy hands and need results.",
   },
   {
     icon: Wrench,
     title: "Technical When Needed",
     description:
-      "Speaks the mechanic's language without dumbing things down.",
+      "We know part codes, specifications, and compatibility. You don't need to explain the obvious.",
   },
   {
     icon: Handshake,
     title: "Partner, Not Seller",
     description:
-      "Builds trust by acting as a tool that supports, not pushes.",
+      "We're here to make your day easier, not to push product. Your success is our success.",
+  },
+];
+
+const whyChoose = [
+  {
+    icon: Clock,
+    title: "Save Time",
+    description:
+      "Fewer calls, less waiting, more cars done by end of day.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Verified Suppliers",
+    description:
+      "Work only with trusted stores and guaranteed quality.",
+  },
+  {
+    icon: DollarSign,
+    title: "Best Price",
+    description:
+      "Compare real-time offers and choose the best deal.",
   },
 ];
 
@@ -196,7 +220,7 @@ export default function PecaAiPage() {
           {/* Logo */}
           <div className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-8 rounded-3xl overflow-hidden border-2 border-white/10 shadow-[0_0_40px_rgba(31,107,255,0.3)]">
             <Image
-              src="/images/portfolio/pecaai-icon.png"
+              src="/images/portfolio/pecaai-logo.jpeg"
               alt="PeçaAí Logo"
               width={144}
               height={144}
@@ -466,7 +490,47 @@ export default function PecaAiPage() {
         </div>
       </section>
 
-      {/* ───────── 7. CTA ───────── */}
+      {/* ───────── 7. WHY CHOOSE ───────── */}
+      <section className="py-24 px-6 bg-surface/50">
+        <div className="max-w-6xl mx-auto">
+          <div data-reveal className="opacity-0 text-center mb-16">
+            <p
+              className="text-sm font-semibold uppercase tracking-widest mb-4"
+              style={{ color: blue }}
+            >
+              Why Choose
+            </p>
+            <h2 className="font-clash font-extrabold text-3xl md:text-5xl text-white">
+              Why choose PeçaAí?
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {whyChoose.map((w) => (
+              <div
+                key={w.title}
+                data-reveal
+                className="opacity-0 bg-surface border border-border rounded-2xl p-8 text-center hover:border-[#1F6BFF40] transition-colors duration-300"
+              >
+                <div
+                  className="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-5"
+                  style={{ backgroundColor: `${blue}15` }}
+                >
+                  <w.icon size={26} style={{ color: blue }} />
+                </div>
+                <h3 className="font-clash font-bold text-xl text-white mb-3">
+                  {w.title}
+                </h3>
+                <p className="text-text-secondary text-sm leading-relaxed">
+                  {w.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ───────── 8. CTA ───────── */}
       <section className="py-32 px-6 text-center relative overflow-hidden">
         {/* Gradient bg */}
         <div

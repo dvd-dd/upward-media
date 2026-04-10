@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, FormEvent } from "react";
-import { MessageCircle, Mail, CheckCircle, AlertCircle } from "lucide-react";
+import { MessageCircle, CheckCircle, AlertCircle } from "lucide-react";
 import { sendEmail } from "@/lib/emailjs";
 import TextReveal from "@/components/ui/TextReveal";
 
@@ -83,14 +83,7 @@ export default function Contact() {
                   Chat on WhatsApp
                 </a>
 
-                {/* Email */}
-                <a
-                  href="mailto:azevedoesilva_luiz@outlook.com"
-                  className="flex items-center gap-3 text-text-secondary hover:text-white transition-colors text-sm"
-                >
-                  <Mail size={18} className="text-primary shrink-0" />
-                  azevedoesilva_luiz@outlook.com
-                </a>
+                {/* Email — hidden for now */}
               </div>
             </TextReveal>
           </div>

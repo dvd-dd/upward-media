@@ -1,13 +1,14 @@
-export default function PortfolioProject({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  return (
-    <section className="min-h-screen flex items-center justify-center pt-20">
-      <h1 className="text-4xl font-clash font-bold text-white">
-        Projeto: {params.slug}
-      </h1>
-    </section>
-  );
+import { notFound } from "next/navigation";
+
+/*
+  All portfolio projects now have dedicated static pages:
+  /portfolio/pecaai, /portfolio/luxor, /portfolio/phoenix,
+  /portfolio/woodframe, /portfolio/nextmoney
+
+  This dynamic route serves as a 404 fallback for unknown slugs.
+  Next.js prioritizes static routes over dynamic ones, so the
+  dedicated pages will always be used for known projects.
+*/
+export default function PortfolioFallback() {
+  notFound();
 }
