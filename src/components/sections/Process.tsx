@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { PROCESS_STEPS } from "@/lib/constants";
+import { PROCESS_KEYS } from "@/lib/constants";
 import TextReveal from "@/components/ui/TextReveal";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Process() {
+  const t = useTranslations("process");
   const timelineRef = useRef<HTMLDivElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
   const lineMobileRef = useRef<HTMLDivElement>(null);
@@ -59,13 +61,17 @@ export default function Process() {
         );
       }
 
+      const inactiveNode = getComputedStyle(document.documentElement)
+        .getPropertyValue("--border")
+        .trim();
+
       // Nodes & text light up sequentially
       nodes.forEach((node, i) => {
         const delay = i / nodes.length;
 
         gsap.fromTo(
           node,
-          { scale: 0.5, backgroundColor: "#1a1a2e" },
+          { scale: 0.5, backgroundColor: inactiveNode },
           {
             scale: 1,
             backgroundColor: "#00D4AA",
@@ -111,29 +117,28 @@ export default function Process() {
   }, []);
 
   return (
-    <section id="process" className="relative py-32 bg-background overflow-hidden">
+    <section id="process" className="relative py-20 sm:py-32 bg-background overflow-hidden">
       {/* Header */}
-      <div className="max-w-7xl mx-auto px-6 text-center mb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center mb-12 sm:mb-20">
         <TextReveal>
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
-            Our Process
+            {t("eyebrow")}
           </p>
         </TextReveal>
         <TextReveal delay={0.1}>
-          <h2 className="font-clash font-extrabold text-3xl md:text-5xl text-white mb-4">
-            From idea to impact
+          <h2 className="font-clash font-extrabold text-3xl xs:text-4xl md:text-5xl text-text-primary mb-4">
+            {t("title")}
           </h2>
         </TextReveal>
         <TextReveal delay={0.2}>
           <p className="text-text-secondary max-w-2xl mx-auto text-base md:text-lg">
-            A proven, transparent process that takes your project from concept to
-            results — no surprises.
+            {t("subtitle")}
           </p>
         </TextReveal>
       </div>
 
       {/* Timeline */}
-      <div ref={timelineRef} className="max-w-7xl mx-auto px-6">
+      <div ref={timelineRef} className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* ===== DESKTOP (horizontal) ===== */}
         <div className="hidden lg:block relative">
           {/* Background line */}
@@ -146,33 +151,36 @@ export default function Process() {
           />
 
           <div className="grid grid-cols-6 gap-4">
-            {PROCESS_STEPS.map((step) => (
-              <div key={step.number} className="relative pt-0">
-                {/* Node dot */}
-                <div
-                  data-step-node
-                  className="w-12 h-12 rounded-full bg-border border-2 border-background flex items-center justify-center mx-auto relative z-10"
-                  style={{ marginTop: "-18px" }}
-                >
-                  <span className="text-xs font-bold text-white">
-                    {step.number}
-                  </span>
-                </div>
+            {PROCESS_KEYS.map((key, idx) => {
+              const number = String(idx + 1).padStart(2, "0");
+              return (
+                <div key={key} className="relative pt-0">
+                  {/* Node dot */}
+                  <div
+                    data-step-node
+                    className="w-12 h-12 rounded-full bg-border border-2 border-background flex items-center justify-center mx-auto relative z-10"
+                    style={{ marginTop: "-18px" }}
+                  >
+                    <span className="text-xs font-bold text-text-primary">
+                      {number}
+                    </span>
+                  </div>
 
-                {/* Text */}
-                <div
-                  data-step-text
-                  className="text-center mt-6 opacity-0 translate-y-4"
-                >
-                  <h3 className="font-clash font-bold text-white text-base mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-text-muted text-sm leading-relaxed">
-                    {step.description}
-                  </p>
+                  {/* Text */}
+                  <div
+                    data-step-text
+                    className="text-center mt-6 opacity-0 translate-y-4"
+                  >
+                    <h3 className="font-clash font-bold text-text-primary text-base mb-2">
+                      {t(`steps.${key}.title`)}
+                    </h3>
+                    <p className="text-text-muted text-sm leading-relaxed">
+                      {t(`steps.${key}.description`)}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -187,30 +195,33 @@ export default function Process() {
             style={{ transform: "scaleY(0)" }}
           />
 
-          <div className="space-y-12">
-            {PROCESS_STEPS.map((step) => (
-              <div key={step.number} className="relative flex items-start gap-6">
-                {/* Node dot */}
-                <div
-                  data-step-node
-                  className="w-12 h-12 rounded-full bg-border border-2 border-background flex items-center justify-center shrink-0 relative z-10 -ml-8"
-                >
-                  <span className="text-xs font-bold text-white">
-                    {step.number}
-                  </span>
-                </div>
+          <div className="space-y-10 sm:space-y-12">
+            {PROCESS_KEYS.map((key, idx) => {
+              const number = String(idx + 1).padStart(2, "0");
+              return (
+                <div key={key} className="relative flex items-start gap-6">
+                  {/* Node dot */}
+                  <div
+                    data-step-node
+                    className="w-12 h-12 rounded-full bg-border border-2 border-background flex items-center justify-center shrink-0 relative z-10 -ml-8"
+                  >
+                    <span className="text-xs font-bold text-text-primary">
+                      {number}
+                    </span>
+                  </div>
 
-                {/* Text */}
-                <div data-step-text className="opacity-0 translate-y-4 pt-2">
-                  <h3 className="font-clash font-bold text-white text-lg mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-text-muted text-sm leading-relaxed">
-                    {step.description}
-                  </p>
+                  {/* Text */}
+                  <div data-step-text className="opacity-0 translate-y-4 pt-2">
+                    <h3 className="font-clash font-bold text-text-primary text-lg mb-1">
+                      {t(`steps.${key}.title`)}
+                    </h3>
+                    <p className="text-text-muted text-sm leading-relaxed">
+                      {t(`steps.${key}.description`)}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

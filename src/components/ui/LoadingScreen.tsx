@@ -48,7 +48,7 @@ export default function LoadingScreen() {
           </span>
         ))}
         <span
-          className="font-clash font-normal text-4xl md:text-6xl text-white ml-2 animate-fade-in"
+          className="font-clash font-normal text-4xl md:text-6xl text-text-primary ml-2 animate-fade-in"
           style={{
             animationDelay: "600ms",
             animationFillMode: "both",

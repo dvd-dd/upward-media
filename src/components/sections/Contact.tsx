@@ -1,23 +1,56 @@
 "use client";
 
-import { useRef, useState, FormEvent } from "react";
-import { MessageCircle, CheckCircle, AlertCircle } from "lucide-react";
+import { useRef, useState, FormEvent, ChangeEvent } from "react";
+import { useTranslations } from "next-intl";
+import { MessageCircle, Mail, CheckCircle, AlertCircle } from "lucide-react";
 import { sendEmail } from "@/lib/emailjs";
+import { SERVICE_OPTION_KEYS } from "@/lib/constants";
 import TextReveal from "@/components/ui/TextReveal";
 
-const serviceOptions = [
-  "Web Development",
-  "Branding & Identity",
-  "Digital Marketing",
-  "Social Media Management",
-  "Full Package",
-  "Other",
-];
+const countries = [
+  { code: "BR", dial: "+55", flag: "🇧🇷", placeholder: "(00) 00000-0000" },
+  { code: "US", dial: "+1", flag: "🇺🇸", placeholder: "(000) 000-0000" },
+] as const;
+
+type CountryCode = (typeof countries)[number]["code"];
+
+function formatPhone(raw: string, country: CountryCode) {
+  const digits = raw.replace(/\D/g, "");
+  if (country === "BR") {
+    const d = digits.slice(0, 11);
+    if (d.length <= 2) return d.length ? `(${d}` : "";
+    if (d.length <= 6) return `(${d.slice(0, 2)}) ${d.slice(2)}`;
+    if (d.length <= 10)
+      return `(${d.slice(0, 2)}) ${d.slice(2, 6)}-${d.slice(6)}`;
+    return `(${d.slice(0, 2)}) ${d.slice(2, 7)}-${d.slice(7)}`;
+  }
+  /* US */
+  const d = digits.slice(0, 10);
+  if (d.length <= 3) return d.length ? `(${d}` : "";
+  if (d.length <= 6) return `(${d.slice(0, 3)}) ${d.slice(3)}`;
+  return `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}`;
+}
 
 export default function Contact() {
+  const t = useTranslations("contact");
+  const tForm = useTranslations("contact.form");
   const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [country, setCountry] = useState<CountryCode>("BR");
+  const [phone, setPhone] = useState("");
+
+  const activeCountry = countries.find((c) => c.code === country)!;
+
+  const handleCountryChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const next = e.target.value as CountryCode;
+    setCountry(next);
+    setPhone((prev) => formatPhone(prev, next));
+  };
+
+  const handlePhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setPhone(formatPhone(e.target.value, country));
+  };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -30,6 +63,8 @@ export default function Contact() {
       await sendEmail(formRef.current);
       setStatus("success");
       formRef.current.reset();
+      setPhone("");
+      setCountry("BR");
     } catch {
       setStatus("error");
     } finally {
@@ -39,34 +74,32 @@ export default function Contact() {
   };
 
   const inputClasses =
-    "w-full bg-surface border border-border rounded-lg py-3 px-4 text-white placeholder:text-text-muted text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/30 transition-colors";
+    "w-full bg-surface border border-border rounded-lg py-3 px-4 text-text-primary placeholder:text-text-muted text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/30 transition-colors";
 
   return (
-    <section id="contact" className="relative py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+    <section id="contact" className="relative py-20 sm:py-32 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left column */}
           <div>
             <TextReveal>
               <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
-                Contact
+                {t("eyebrow")}
               </p>
             </TextReveal>
             <TextReveal delay={0.1}>
-              <h2 className="font-clash font-extrabold text-3xl md:text-5xl text-white mb-6">
-                Let&apos;s build something great
+              <h2 className="font-clash font-extrabold text-3xl xs:text-4xl md:text-5xl text-text-primary mb-6">
+                {t("title")}
               </h2>
             </TextReveal>
             <TextReveal delay={0.2}>
               <p className="text-text-secondary text-base leading-relaxed mb-4">
-                Every business is unique. We take the time to understand your
-                goals before recommending a solution. No templates. No
-                guesswork. Just strategy.
+                {t("paragraph1")}
               </p>
             </TextReveal>
             <TextReveal delay={0.3}>
               <p className="text-text-secondary text-base leading-relaxed mb-8">
-                Reach out and let&apos;s start a conversation about your growth.
+                {t("paragraph2")}
               </p>
             </TextReveal>
 
@@ -74,16 +107,23 @@ export default function Contact() {
               <div className="space-y-4">
                 {/* WhatsApp button */}
                 <a
-                  href="https://wa.me/5535989896851?text=Hello!%20I%27d%20like%20to%20discuss%20a%20project."
+                  href={`https://wa.me/5535998996851?text=${encodeURIComponent(t("whatsappMessage"))}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-semibold text-base hover:shadow-[0_0_24px_rgba(37,211,102,0.4)] transition-shadow duration-300"
                 >
                   <MessageCircle size={22} />
-                  Chat on WhatsApp
+                  {t("whatsapp")}
                 </a>
 
-                {/* Email — hidden for now */}
+                {/* Email */}
+                <a
+                  href="mailto:hello@upwardbr.com"
+                  className="flex items-center gap-3 text-text-secondary hover:text-text-primary transition-colors text-sm"
+                >
+                  <Mail size={18} className="text-primary shrink-0" />
+                  hello@upwardbr.com
+                </a>
               </div>
             </TextReveal>
           </div>
@@ -102,14 +142,14 @@ export default function Contact() {
                     htmlFor="user_name"
                     className="block text-text-secondary text-xs uppercase tracking-wider mb-2"
                   >
-                    Name <span className="text-primary">*</span>
+                    {tForm("name")} <span className="text-primary">*</span>
                   </label>
                   <input
                     id="user_name"
                     name="user_name"
                     type="text"
                     required
-                    placeholder="Your name"
+                    placeholder={tForm("namePlaceholder")}
                     className={inputClasses}
                   />
                 </div>
@@ -118,13 +158,13 @@ export default function Contact() {
                     htmlFor="user_company"
                     className="block text-text-secondary text-xs uppercase tracking-wider mb-2"
                   >
-                    Company
+                    {tForm("company")}
                   </label>
                   <input
                     id="user_company"
                     name="user_company"
                     type="text"
-                    placeholder="Your company"
+                    placeholder={tForm("companyPlaceholder")}
                     className={inputClasses}
                   />
                 </div>
@@ -137,14 +177,14 @@ export default function Contact() {
                     htmlFor="user_email"
                     className="block text-text-secondary text-xs uppercase tracking-wider mb-2"
                   >
-                    Email <span className="text-primary">*</span>
+                    {tForm("email")} <span className="text-primary">*</span>
                   </label>
                   <input
                     id="user_email"
                     name="user_email"
                     type="email"
                     required
-                    placeholder="you@company.com"
+                    placeholder={tForm("emailPlaceholder")}
                     className={inputClasses}
                   />
                 </div>
@@ -153,15 +193,38 @@ export default function Contact() {
                     htmlFor="user_phone"
                     className="block text-text-secondary text-xs uppercase tracking-wider mb-2"
                   >
-                    Phone
+                    {tForm("phone")}
                   </label>
-                  <input
-                    id="user_phone"
-                    name="user_phone"
-                    type="tel"
-                    placeholder="+55 (00) 00000-0000"
-                    className={inputClasses}
-                  />
+                  <div className="flex gap-2 min-w-0">
+                    <select
+                      aria-label="Country code"
+                      value={country}
+                      onChange={handleCountryChange}
+                      className="shrink-0 bg-surface border border-border rounded-lg py-3 px-2 sm:px-3 text-text-primary text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/30 transition-colors appearance-none cursor-pointer"
+                    >
+                      {countries.map((c) => (
+                        <option key={c.code} value={c.code}>
+                          {c.flag} {c.dial}
+                        </option>
+                      ))}
+                    </select>
+                    <input
+                      id="user_phone"
+                      name="user_phone"
+                      type="tel"
+                      inputMode="tel"
+                      autoComplete="tel-national"
+                      value={phone}
+                      onChange={handlePhoneChange}
+                      placeholder={activeCountry.placeholder}
+                      className={`${inputClasses} flex-1 min-w-0`}
+                    />
+                    <input
+                      type="hidden"
+                      name="user_phone_country"
+                      value={activeCountry.dial}
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -171,7 +234,7 @@ export default function Contact() {
                   htmlFor="service_interest"
                   className="block text-text-secondary text-xs uppercase tracking-wider mb-2"
                 >
-                  Service Interest
+                  {tForm("serviceInterest")}
                 </label>
                 <select
                   id="service_interest"
@@ -180,13 +243,16 @@ export default function Contact() {
                   defaultValue=""
                 >
                   <option value="" disabled>
-                    Select a service...
+                    {tForm("selectService")}
                   </option>
-                  {serviceOptions.map((opt) => (
-                    <option key={opt} value={opt}>
-                      {opt}
-                    </option>
-                  ))}
+                  {SERVICE_OPTION_KEYS.map((key) => {
+                    const label = tForm(`services.${key}`);
+                    return (
+                      <option key={key} value={label}>
+                        {label}
+                      </option>
+                    );
+                  })}
                 </select>
               </div>
 
@@ -196,13 +262,13 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-text-secondary text-xs uppercase tracking-wider mb-2"
                 >
-                  Message
+                  {tForm("message")}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
-                  placeholder="Tell us about your project..."
+                  placeholder={tForm("messagePlaceholder")}
                   className={`${inputClasses} resize-none`}
                 />
               </div>
@@ -216,10 +282,10 @@ export default function Contact() {
                 {loading ? (
                   <>
                     <span className="w-4 h-4 border-2 border-background/30 border-t-background rounded-full animate-spin" />
-                    Sending...
+                    {tForm("sending")}
                   </>
                 ) : (
-                  "Send Message"
+                  tForm("send")
                 )}
               </button>
 
@@ -227,14 +293,13 @@ export default function Contact() {
               {status === "success" && (
                 <div className="flex items-center gap-2 text-primary text-sm">
                   <CheckCircle size={16} />
-                  Message sent successfully! We&apos;ll get back to you soon.
+                  {tForm("status.success")}
                 </div>
               )}
               {status === "error" && (
                 <div className="flex items-center gap-2 text-red-400 text-sm">
                   <AlertCircle size={16} />
-                  Something went wrong. Please try again or contact us via
-                  WhatsApp.
+                  {tForm("status.error")}
                 </div>
               )}
             </form>

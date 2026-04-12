@@ -50,11 +50,11 @@ export default function AnimatedCounter({
 
   return (
     <div ref={ref} className="text-center">
-      <span className="font-clash font-extrabold text-5xl md:text-6xl text-primary tabular-nums">
+      <span className="font-clash font-extrabold text-3xl xs:text-4xl sm:text-5xl md:text-6xl text-primary tabular-nums block">
         {display}
         {suffix}
       </span>
-      <p className="text-text-secondary text-sm md:text-base mt-2">{label}</p>
+      <p className="text-text-secondary text-xs xs:text-sm md:text-base mt-2 leading-tight">{label}</p>
     </div>
   );
 }

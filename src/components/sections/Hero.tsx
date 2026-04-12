@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, Suspense } from "react";
 import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { Puzzle, Search, Layers } from "lucide-react";
 import MagneticButton from "@/components/ui/MagneticButton";
@@ -10,13 +11,14 @@ const HeroScene = dynamic(() => import("@/components/three/HeroScene"), {
   ssr: false,
 });
 
-const stats = [
-  { icon: Puzzle, label: "Custom Solutions" },
-  { icon: Search, label: "SEO Optimized" },
-  { icon: Layers, label: "Full-Service Agency" },
-];
+const STAT_KEYS = [
+  { key: "custom", icon: Puzzle },
+  { key: "seo", icon: Search },
+  { key: "fullService", icon: Layers },
+] as const;
 
 export default function Hero() {
+  const t = useTranslations("hero");
   const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const badgeRef = useRef<HTMLDivElement>(null);
@@ -99,7 +101,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden bg-background"
+      className="relative min-h-[100svh] flex items-center overflow-hidden bg-background"
     >
       {/* --- Background layers --- */}
 
@@ -116,12 +118,15 @@ export default function Hero() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          opacity: 0.05,
           backgroundImage: `
-            linear-gradient(rgba(26,26,46,1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(26,26,46,1) 1px, transparent 1px)
+            linear-gradient(rgba(0,212,170,0.09) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,212,170,0.09) 1px, transparent 1px)
           `,
           backgroundSize: "60px 60px",
+          maskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 85%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 85%)",
         }}
       />
 
@@ -141,67 +146,68 @@ export default function Hero() {
       </div>
 
       {/* --- Text content --- */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-36 pb-16 lg:pt-32">
-        <div className="max-w-3xl">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 w-full pt-28 sm:pt-36 pb-12 sm:pb-16 lg:pt-32 pointer-events-none">
+        <div className="max-w-3xl pointer-events-auto">
           {/* Badge */}
-          <div ref={badgeRef} className="opacity-0 mb-6">
-            <span className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-semibold tracking-wider uppercase">
-              Performance-Driven Digital Agency
+          <div ref={badgeRef} className="opacity-0 mb-5 sm:mb-6">
+            <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-[10px] sm:text-xs font-semibold tracking-wider uppercase">
+              {t("badge")}
             </span>
           </div>
 
           {/* H1 */}
-          <h1 className="font-clash font-extrabold text-[2.5rem] leading-[1.1] md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] mb-6">
-            <div ref={h1Line1Ref} className="opacity-0">
-              We craft digital experiences
+          <h1 className="font-clash font-extrabold text-[clamp(1.875rem,8vw,2.5rem)] leading-[1.1] md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] mb-5 sm:mb-6 break-words hyphens-auto">
+            <div ref={h1Line1Ref} className="opacity-0 text-text-primary">
+              {t("titleLine1")}
             </div>
             <div ref={h1Line2Ref} className="opacity-0 text-gradient-mixed">
-              that drive growth
+              {t("titleLine2")}
             </div>
           </h1>
 
           {/* Subtitle */}
           <p
             ref={subtitleRef}
-            className="opacity-0 text-text-secondary text-base md:text-lg max-w-lg mb-8 leading-relaxed"
+            className="opacity-0 text-text-secondary text-sm sm:text-base md:text-lg max-w-lg mb-7 sm:mb-8 leading-relaxed"
           >
-            Strategy, design, and technology — built to scale your brand and
-            dominate your market.
+            {t("subtitle")}
           </p>
 
           {/* Buttons */}
           <div
             ref={buttonsRef}
-            className="opacity-0 flex flex-wrap items-center gap-4 mb-10"
+            className="opacity-0 flex flex-col xs:flex-row xs:flex-wrap items-stretch xs:items-center gap-3 xs:gap-4 mb-8 sm:mb-10"
           >
             <MagneticButton
               as="a"
               href="/#contact"
-              className="gradient-primary text-background px-8 py-3.5 rounded-full text-sm font-semibold transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(0,212,170,0.45),0_0_60px_rgba(0,212,170,0.15)]"
+              wrapperClassName="block xs:inline-block w-full xs:w-auto"
+              className="block w-full xs:inline-block xs:w-auto gradient-primary text-background px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-sm font-semibold text-center transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(0,212,170,0.45),0_0_60px_rgba(0,212,170,0.15)]"
             >
-              Start a Project
+              {t("ctaPrimary")}
             </MagneticButton>
             <MagneticButton
               as="a"
               href="/#portfolio"
-              className="px-8 py-3.5 rounded-full text-sm font-semibold border border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
+              wrapperClassName="block xs:inline-block w-full xs:w-auto"
+              className="block w-full xs:inline-block xs:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-sm font-semibold text-center border border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
             >
-              See Our Work
+              {t("ctaSecondary")}
             </MagneticButton>
           </div>
 
           {/* Stats bar */}
           <div
             ref={statsRef}
-            className="opacity-0 flex flex-wrap items-center gap-6 md:gap-8"
+            className="opacity-0 flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-6 md:gap-8"
           >
-            {stats.map(({ icon: Icon, label }) => (
+            {STAT_KEYS.map(({ key, icon: Icon }) => (
               <div
-                key={label}
-                className="flex items-center gap-2 text-text-muted text-xs md:text-sm"
+                key={key}
+                className="flex items-center gap-1.5 sm:gap-2 text-text-muted text-[11px] sm:text-xs md:text-sm whitespace-nowrap"
               >
-                <Icon size={16} className="text-primary" />
-                <span>{label}</span>
+                <Icon size={14} className="text-primary shrink-0" />
+                <span>{t(`stats.${key}`)}</span>
               </div>
             ))}
           </div>

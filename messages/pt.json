@@ -1,0 +1,585 @@
+{
+  "meta": {
+    "home": {
+      "title": "Upward Media | Agência Digital Focada em Performance",
+      "description": "Estratégia, design e tecnologia — feitos para escalar sua marca e dominar o seu mercado. Desenvolvimento web, branding, marketing digital e suporte contínuo."
+    },
+    "cases": {
+      "luxor": {
+        "title": "Luxor — Identidade de Marca Premium",
+        "description": "Uma marca premium criada para representar o mais alto padrão — exclusividade, sofisticação e prestígio em cada detalhe."
+      },
+      "phoenix": {
+        "title": "Phoenix — Marca de Cibersegurança",
+        "description": "Proteção inteligente e evolução constante. Uma marca nascida para proteger pessoas, dados e sistemas com a força do renascimento."
+      },
+      "pecaai": {
+        "title": "PeçaAí — Marketplace de Autopeças",
+        "description": "Identidade de marca completa para um marketplace de autopeças. Logo, sistema de cores, tipografia e tom de voz — construídos do zero."
+      },
+      "woodframe": {
+        "title": "Wood Frame — Marca de Design Natural",
+        "description": "Uma marca que transforma o natural em sofisticado — com calma, clareza e elegância enraizadas na natureza."
+      }
+    }
+  },
+  "site": {
+    "name": "Upward Media",
+    "tagline": "Estratégia. Design. Crescimento."
+  },
+  "nav": {
+    "services": "O Que Fazemos",
+    "process": "Processo",
+    "portfolio": "Portfólio",
+    "contact": "Contato",
+    "cta": "Fale Conosco",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "languageSwitcher": "Trocar idioma"
+  },
+  "hero": {
+    "badge": "Agência Digital Focada em Performance",
+    "titleLine1": "Criamos experiências digitais",
+    "titleLine2": "que geram crescimento",
+    "subtitle": "Estratégia, design e tecnologia — feitos para escalar sua marca e dominar o seu mercado.",
+    "ctaPrimary": "Iniciar um Projeto",
+    "ctaSecondary": "Ver Nosso Trabalho",
+    "stats": {
+      "custom": "Soluções Sob Medida",
+      "seo": "Otimizado para SEO",
+      "fullService": "Agência Full-Service"
+    }
+  },
+  "services": {
+    "eyebrow": "O Que Fazemos",
+    "title": "Soluções feitas para crescer",
+    "subtitle": "Da identidade da marca aos anúncios pagos, cobrimos cada ponto da sua presença digital.",
+    "learnMore": "Saiba mais",
+    "items": {
+      "webdev": {
+        "title": "Desenvolvimento Web",
+        "description": "Landing pages, sites multi-página e aplicações web sob medida, criadas com tecnologia moderna e construídas para performance.",
+        "fullDescription": "Construímos sites rápidos e modernos que não só ficam lindos — eles performam. De landing pages focadas em conversão a sites institucionais completos e aplicações web sob medida, cada projeto é codado à mão com a tecnologia mais atual. Sem templates. Sem page builders. Só código limpo, otimizado, feito para velocidade, SEO e escalabilidade.",
+        "features": [
+          "Landing pages sob medida",
+          "Sites institucionais multi-página",
+          "Aplicações e sistemas web personalizados",
+          "Design responsivo (mobile, tablet, desktop)",
+          "Otimização de performance e carregamento rápido",
+          "Estrutura preparada para SEO"
+        ]
+      },
+      "branding": {
+        "title": "Branding & Identidade",
+        "description": "Criação completa de marca ou integração da sua marca existente em uma presença digital impactante. Logo, cores, tipografia e muito mais.",
+        "fullDescription": "Sua marca é mais do que um logo — é o sentimento que as pessoas têm ao interagir com o seu negócio. Criamos identidades de marca completas do zero ou trabalhamos com a sua marca atual para construir uma presença digital coesa. Cada cor, fonte e elemento visual é escolhido com propósito para tornar sua marca inesquecível.",
+        "features": [
+          "Design de logo e marca",
+          "Sistema completo de cores e tipografia",
+          "Manual de identidade da marca",
+          "Identidade visual em todas as plataformas",
+          "Estratégia e posicionamento de marca",
+          "Integração com ativos de marca existentes"
+        ]
+      },
+      "marketing": {
+        "title": "Marketing Digital",
+        "description": "Otimização de SEO, campanhas Meta e Google Ads e estratégias de crescimento sob medida para colocar seu negócio na frente das pessoas certas.",
+        "fullDescription": "Ser encontrado online não é sorte — é estratégia. Combinamos SEO, mídia paga e táticas de crescimento orientadas por dados para colocar o seu negócio na frente das pessoas que mais importam. Cada campanha é monitorada, medida e otimizada para maximizar o retorno sobre o investimento.",
+        "features": [
+          "SEO técnico e on-page",
+          "Gestão de campanhas no Google Ads",
+          "Campanhas Meta Ads (Instagram & Facebook)",
+          "Funis de geração de leads",
+          "Analytics e acompanhamento de performance",
+          "Estratégia de crescimento personalizada"
+        ]
+      },
+      "social": {
+        "title": "Redes Sociais",
+        "description": "Criação de conteúdo, edição profissional de vídeo e gestão completa de contas para manter sua marca ativa e engajada.",
+        "fullDescription": "Sua presença nas redes sociais é a conversa diária da sua marca com o mundo. Cuidamos de tudo — da criação de conteúdo que prende a atenção e edição profissional de vídeo até a gestão das suas contas e o engajamento com a sua audiência. Você foca em tocar o seu negócio; a gente garante que sua marca continue ativa e relevante.",
+        "features": [
+          "Criação de conteúdo (posts, reels, stories)",
+          "Edição profissional de vídeo",
+          "Gestão e agendamento de contas",
+          "Engajamento com a comunidade",
+          "Calendário e estratégia de conteúdo",
+          "Relatórios de performance"
+        ]
+      },
+      "support": {
+        "title": "Suporte Contínuo",
+        "description": "Hospedagem, manutenção, revisões semanais de performance e gestão do Perfil de Empresa do Google. Estamos com você depois do lançamento.",
+        "fullDescription": "Lançar é só o começo. Continuamos com você depois do go-live com hospedagem confiável, manutenção proativa e check-ins semanais para revisar a performance e planejar os próximos passos. Pense na gente como um parceiro digital de longo prazo, não um fornecedor de uma vez só.",
+        "features": [
+          "Hospedagem e manutenção gerenciada",
+          "Primeiro mês de suporte gratuito",
+          "Revisões semanais de performance",
+          "Gestão do Perfil de Empresa do Google",
+          "Correções e atualizações prioritárias",
+          "Recomendações estratégicas de crescimento"
+        ]
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Nosso Processo",
+    "title": "Da ideia ao impacto",
+    "subtitle": "Um processo comprovado e transparente que leva seu projeto do conceito ao resultado — sem surpresas.",
+    "steps": {
+      "discovery": {
+        "title": "Descoberta",
+        "description": "Conhecemos o seu negócio, objetivos, público e cenário competitivo."
+      },
+      "strategy": {
+        "title": "Estratégia",
+        "description": "Um roadmap sob medida é construído em torno dos seus objetivos e orçamento."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Wireframes, mockups e elementos de marca ganham vida para sua aprovação."
+      },
+      "development": {
+        "title": "Desenvolvimento",
+        "description": "Seu projeto é construído com tecnologia moderna, otimizado para velocidade e SEO."
+      },
+      "launch": {
+        "title": "Lançamento",
+        "description": "Testes rigorosos, ajustes finais e um go-live tranquilo."
+      },
+      "growth": {
+        "title": "Crescimento",
+        "description": "Otimização contínua, acompanhamento de performance e escala estratégica."
+      }
+    }
+  },
+  "differentials": {
+    "eyebrow": "Por Que Nós",
+    "title": "Por que a Upward Media",
+    "subtitle": "Não somos só mais uma agência.",
+    "items": {
+      "tailored": {
+        "title": "Estratégia Sob Medida",
+        "description": "Nada de soluções de prateleira. Cada plano é construído do zero com base nos seus objetivos e mercado."
+      },
+      "weekly": {
+        "title": "Check-ins Semanais",
+        "description": "Nos reunimos com você toda semana para revisar resultados, ajustar táticas e manter você por dentro de tudo."
+      },
+      "performance": {
+        "title": "Performance em Primeiro Lugar",
+        "description": "Cada decisão de design, cada linha de código, cada real investido em mídia — otimizado para resultados mensuráveis."
+      },
+      "fullService": {
+        "title": "Agência Full-Service",
+        "description": "Branding, desenvolvimento, marketing, redes sociais — um único time cuidando de tudo de forma integrada."
+      },
+      "postLaunch": {
+        "title": "Suporte Pós-Lançamento",
+        "description": "Primeiro mês de suporte gratuito, manutenção contínua e um time dedicado que não desaparece depois da entrega."
+      }
+    }
+  },
+  "portfolio": {
+    "eyebrow": "Nosso Trabalho",
+    "title": "Projetos que falam por si",
+    "subtitle": "Uma seleção de marcas e experiências que criamos.",
+    "tabs": {
+      "branding": "Brandings",
+      "website": "Sites"
+    },
+    "viewProject": "Ver Projeto",
+    "visitLive": "Visitar Site",
+    "comingSoonTitle": "Cases de sites em breve.",
+    "comingSoonSubtitle": "Estamos preparando uma seleção fresca. Volte em breve.",
+    "projects": {
+      "pecaai": {
+        "title": "PeçaAí",
+        "description": "Identidade de marca completa para um marketplace automotivo",
+        "tagline": "Encontre. Peça. Receba.",
+        "tags": ["Branding", "Identidade Visual", "Design de App"]
+      },
+      "luxor": {
+        "title": "Luxor",
+        "description": "Logo premium em ouro para uma marca de luxo",
+        "tagline": "Exclusividade. Sofisticação. Prestígio.",
+        "tags": ["Design de Logo", "Luxo", "Branding"]
+      },
+      "woodframe": {
+        "title": "Wood Frame",
+        "description": "Branding natural para uma empresa de design em madeira",
+        "tagline": "Design que nasce da natureza.",
+        "tags": ["Design de Logo", "Natural", "Branding"]
+      },
+      "phoenix": {
+        "title": "Phoenix",
+        "description": "Marca de cibersegurança com simbolismo de renascimento",
+        "tagline": "Proteção Inteligente. Evolução Constante.",
+        "tags": ["Branding", "Cibersegurança", "Design de Logo"]
+      },
+      "luxor-site": {
+        "title": "Luxor — The Private Membership",
+        "description": "Landing editorial para um concierge de luxo só por convite.",
+        "tagline": "Não é para todo mundo. Esse é o ponto.",
+        "tags": ["Landing Page", "Editorial", "Luxo"]
+      },
+      "phoenix-site": {
+        "title": "Phoenix — The Security Network",
+        "description": "Landing de SaaS de cibersegurança nativa em IA, com console ao vivo.",
+        "tagline": "Vemos o que os outros não veem.",
+        "tags": ["Landing Page", "SaaS", "Cibersegurança"]
+      },
+      "woodframe-site": {
+        "title": "Wood Frame — Objects & Interiors",
+        "description": "Landing editorial para um estúdio boutique de design natural.",
+        "tagline": "Objetos da natureza.",
+        "tags": ["Landing Page", "Editorial", "Design Natural"]
+      },
+      "pecaai-site": {
+        "title": "PeçaAí — Peças no app",
+        "description": "Landing de marketing para um marketplace B2B de autopeças.",
+        "tagline": "Toca, encontra, recebe.",
+        "tags": ["Landing Page", "Marketing de App", "Marketplace"]
+      }
+    }
+  },
+  "socialProof": {
+    "counters": {
+      "projects": "Projetos Entregues",
+      "brands": "Marcas Construídas",
+      "custom": "Trabalho Sob Medida"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "title": "Vamos construir algo grande",
+    "paragraph1": "Cada negócio é único. Tiramos o tempo necessário para entender seus objetivos antes de recomendar uma solução. Sem templates. Sem achismo. Só estratégia.",
+    "paragraph2": "Fale com a gente e vamos começar uma conversa sobre o seu crescimento.",
+    "whatsapp": "Falar no WhatsApp",
+    "whatsappMessage": "Olá! Gostaria de conversar sobre um projeto.",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Seu nome",
+      "company": "Empresa",
+      "companyPlaceholder": "Sua empresa",
+      "email": "E-mail",
+      "emailPlaceholder": "voce@empresa.com",
+      "phone": "Telefone",
+      "serviceInterest": "Serviço de Interesse",
+      "selectService": "Selecione um serviço...",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte sobre o seu projeto...",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "services": {
+        "webdev": "Desenvolvimento Web",
+        "branding": "Branding & Identidade",
+        "marketing": "Marketing Digital",
+        "social": "Gestão de Redes Sociais",
+        "full": "Pacote Completo",
+        "other": "Outro"
+      },
+      "status": {
+        "success": "Mensagem enviada com sucesso! Em breve entramos em contato.",
+        "error": "Algo deu errado. Tente novamente ou fale com a gente pelo WhatsApp."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Estratégia, design e crescimento — feitos para marcas que não param.",
+    "quickLinks": "Links rápidos",
+    "getInTouch": "Fale conosco",
+    "follow": "Siga",
+    "copyright": "© {year} Upward Media. Todos os direitos reservados."
+  },
+  "cases": {
+    "back": "Voltar ao Portfólio",
+    "startProject": "Comece seu Projeto",
+    "luxor": {
+      "tagline": "Exclusividade. Sofisticação. Prestígio.",
+      "tags": ["Logo Design", "Luxo", "Branding"],
+      "aboutEyebrow": "Sobre o Projeto",
+      "aboutBody": "Uma marca premium criada para representar o mais alto padrão — não apenas em produtos e serviços, mas em experiência, status e valor percebido. A Luxor existe para elevar o que significa viver com excelência.",
+      "essenceEyebrow": "Fundamentos da Marca",
+      "essenceTitle": "A Essência da Luxor",
+      "mvp": [
+        { "title": "Missão", "text": "Entregar produtos e serviços de altíssimo nível com excelência e exclusividade em cada interação." },
+        { "title": "Visão", "text": "Ser referência global em luxo e prestígio, reconhecida pela qualidade incontestável." },
+        { "title": "Propósito", "text": "Elevar o padrão de experiência e sofisticação em cada interação com o consumidor." }
+      ],
+      "values": ["Exclusividade", "Excelência", "Sofisticação", "Prestígio", "Atenção aos Detalhes"],
+      "positioningEyebrow": "Posicionamento",
+      "positioningTitle": "Uma marca para quem exige o melhor",
+      "positioningSubtitle": "A Luxor não vende apenas um produto — ela oferece uma solução premium com sofisticação e padrões elevados que vão além da funcionalidade.",
+      "positioning": [
+        { "title": "Luxo", "description": "Autêntico, jamais ostensivo." },
+        { "title": "Poder", "description": "Uma presença que impõe respeito." },
+        { "title": "Status", "description": "Símbolo de conquista." },
+        { "title": "Exclusividade", "description": "Acesso restrito por natureza." }
+      ],
+      "personalityEyebrow": "Personalidade",
+      "personalityTitle": "Se a Luxor fosse uma pessoa",
+      "personalitySubtitle": "Elegante, confiante, seletiva, refinada e dominante — uma presença que não precisa gritar para ser notada.",
+      "personality": [
+        { "title": "Elegante e Confiante", "description": "Uma presença marcante sem esforço. A confiança da Luxor é natural, nunca forçada." },
+        { "title": "Seletiva e Refinada", "description": "Cada detalhe é intencional. Cada decisão é deliberada." },
+        { "title": "Dominante e Autoritária", "description": "Lidera pelo exemplo. O verdadeiro luxo não grita — ele simplesmente é." }
+      ],
+      "archetypesEyebrow": "Arquétipos da Marca",
+      "archetypesTitle": "Os arquétipos que guiam a Luxor",
+      "rulerTitle": "Soberano — Arquétipo Primário",
+      "rulerBody": "O Soberano representa poder, controle e status. É o arquétipo da autoridade que define padrões e estabelece o que é considerado excelente. A Luxor não segue tendências — ela as define.",
+      "rulerItems": ["Poder e controle", "Liderança de mercado", "Alto status social"],
+      "loverTitle": "Amante — Arquétipo Secundário",
+      "loverBody": "O Amante traz desejo, estética e experiência sensorial. É o arquétipo que transforma o luxo em algo visceral e emocional. A Luxor não é apenas admirada — ela é desejada.",
+      "loverItems": ["Desejo e atração", "Estética refinada", "Experiência sensorial"],
+      "identityEyebrow": "Identidade Visual",
+      "identityTitle": "Uma linguagem visual que fala por si",
+      "colors": [
+        { "name": "Dourado", "meaning": "Riqueza e Prestígio" },
+        { "name": "Preto", "meaning": "Sofisticação e Contraste" },
+        { "name": "Grafite", "meaning": "Profundidade Premium" },
+        { "name": "Branco", "meaning": "Respiro Visual" }
+      ],
+      "styleLabel": "Estilo Visual",
+      "styleTitle": "Minimalista. Elegante. Premium.",
+      "styleBody": "Brilhos metálicos sutis, composições limpas e fundos escuros com elementos dourados criam contraste premium e distinção imediata.",
+      "symbolLabel": "Símbolo e Logo",
+      "symbolTitle": "Autoridade pelo simbolismo",
+      "symbolBody": "Um símbolo forte que comunica autoridade. Fundo escuro com elementos dourados gera contraste premium e impacto imediato.",
+      "verbalEyebrow": "Identidade Verbal",
+      "verbalTitle": "A voz da Luxor",
+      "slogans": [
+        "Exclusividade em cada detalhe.",
+        "Onde o luxo encontra a excelência.",
+        "O padrão que define o sucesso."
+      ],
+      "saysTitle": "O que ela diz",
+      "saysBody": "Exclusividade, padrões elevados e diferenciação. Cada mensagem reforça que a Luxor está em uma categoria à parte.",
+      "howTitle": "Como ela diz",
+      "howBody": "Com autoridade e elegância. O tom é sofisticado, direto e confiante. Sem exagero — porque o verdadeiro luxo não precisa gritar.",
+      "createsTitle": "O que ela cria",
+      "createsBody": "Desejo, status e pertencimento. A Luxor cria a sensação de que fazer parte deste universo é uma conquista — e conquistas raras têm valor incomparável.",
+      "usedTitle": "Palavras que a marca usa",
+      "usedWords": ["Exclusivo", "Premium", "Excelência", "Alto Padrão", "Sofisticado", "Prestígio", "Refinado", "Seletivo"],
+      "avoidedTitle": "Palavras que a marca evita",
+      "avoidedWords": ["Barato", "Promoção", "Comum", "Acessível", "Popular", "Desconto"],
+      "experienceEyebrow": "Experiência da Marca",
+      "experienceTitle": "A Luxor não é para todos",
+      "experienceSubtitle": "E essa é justamente a questão. A seletividade é parte fundamental do valor da Luxor. A marca deve ser vivenciada como algo raro, conquistado, um privilégio de poucos.",
+      "experience": [
+        { "title": "Privilégio", "description": "Acessar a Luxor é uma distinção. Cada interação reforça que o cliente faz parte de um grupo seleto." },
+        { "title": "Desejo", "description": "A Luxor cria desejo antes da compra. A experiência da marca começa muito antes do primeiro contato com o produto." },
+        { "title": "Conquista", "description": "Possuir ou acessar a Luxor é uma conquista. A marca transforma o consumo em símbolo de sucesso." }
+      ],
+      "closingQuote": "A Luxor é um símbolo de status. Ela transforma produto em desejo e experiência em prestígio.",
+      "ctaTitle": "Interessado em uma marca de luxo como esta?",
+      "ctaBody": "Vamos criar uma identidade premium que eleve sua marca a uma categoria à parte."
+    },
+    "phoenix": {
+      "tagline": "Proteção Inteligente. Evolução Constante.",
+      "tags": ["Branding", "Cybersegurança", "Logo Design"],
+      "aboutEyebrow": "Sobre o Projeto",
+      "aboutBody": "Uma marca criada para proteger pessoas, dados e sistemas — com a força do renascimento e a precisão da tecnologia moderna. Como a fênix, ela representa renascimento, força e a capacidade de se reinventar constantemente.",
+      "essenceEyebrow": "Essência da Marca",
+      "essenceTitle": "O conceito por trás do nome",
+      "essence": [
+        { "title": "Segmento", "text": "Rede de segurança, Cybersegurança e Monitoramento." },
+        { "title": "Propósito", "text": "Proteger pessoas, dados e sistemas com inteligência e inovação." },
+        { "title": "Missão", "text": "Oferecer segurança confiável e tecnológica em tempo real." },
+        { "title": "Visão", "text": "Ser referência em segurança digital e proteção avançada." }
+      ],
+      "positioningEyebrow": "Posicionamento",
+      "positioningTitle": "Alta Tecnologia + Proteção + Inteligência",
+      "positioningSubtitle": "A Phoenix é uma rede de segurança para empresas e pessoas que precisam de proteção confiável e inteligente — oferecendo soluções tecnológicas avançadas com agilidade, precisão e evolução constante.",
+      "pillars": [
+        { "title": "Alta Tecnologia", "description": "Soluções de ponta" },
+        { "title": "Proteção Inteligente", "description": "Segurança ativa e proativa" },
+        { "title": "Agilidade e Precisão", "description": "Resposta rápida, resultado certo" },
+        { "title": "Evolução Contínua", "description": "Sempre aprendendo, sempre melhorando" }
+      ],
+      "personalityEyebrow": "Personalidade",
+      "personalityTitle": "Se a Phoenix fosse uma pessoa...",
+      "personality": [
+        { "title": "Estratégica", "description": "Pensa à frente, antecipa riscos e age com precisão antes do problema acontecer." },
+        { "title": "Inteligente", "description": "Analisa, aprende e evolui a cada nova ameaça — nunca estagnada." },
+        { "title": "Vigilante", "description": "Presente 24/7, com atenção constante e resposta imediata." },
+        { "title": "Segura e Futurista", "description": "Transmite confiança com tecnologia de ponta e linguagem moderna." }
+      ],
+      "toneLabel": "Tom de voz:",
+      "toneBody": "Direto, Confiante, Técnico (sem ser complicado), Moderno",
+      "archetypesEyebrow": "Arquétipos da Marca",
+      "archetypesTitle": "Herói + Sábio",
+      "heroTitle": "Herói — Arquétipo Primário",
+      "heroBody": "A Phoenix protege, resolve e enfrenta riscos com coragem e determinação. Está presente em momentos críticos para garantir que o cliente saia mais forte.",
+      "heroItems": ["Protege e resolve", "Enfrenta riscos com coragem", "Age com determinação"],
+      "sageTitle": "Sábio — Arquétipo Secundário",
+      "sageBody": "Com inteligência, análise e precisão, a Phoenix toma decisões baseadas em conhecimento — não em reação, mas em estratégia.",
+      "sageItems": ["Inteligência e análise", "Precisão e método", "Conhecimento estratégico"],
+      "messageEyebrow": "Mensagem Central",
+      "messageTitle": "O que a Phoenix comunica",
+      "message": [
+        { "title": "O que ela diz", "text": "Segurança, tecnologia, proteção e controle — com autoridade e clareza." },
+        { "title": "Como ela diz", "text": "Com tom direto, confiante e técnico — moderno sem ser complicado." },
+        { "title": "O que ela cria", "text": "Sensação de segurança, confiança e controle total no cliente." }
+      ],
+      "identityEyebrow": "Identidade Visual",
+      "identityTitle": "Um símbolo que comunica poder",
+      "colors": [
+        { "name": "Roxo", "meaning": "Tecnologia e Inovação" },
+        { "name": "Branco", "meaning": "Clareza e Transparência" },
+        { "name": "Preto", "meaning": "Segurança e Força" },
+        { "name": "Grafite", "meaning": "Solidez e Estrutura" }
+      ],
+      "logoElements": [
+        { "title": "Forma de Asa", "description": "Proteção e cobertura total" },
+        { "title": "A Fênix", "description": "Renascimento e resistência" },
+        { "title": "Linhas Roxas", "description": "Tecnologia, energia e inovação" },
+        { "title": "Visual Limpo", "description": "Modernidade e precisão" }
+      ],
+      "styleLabel": "Estilo:",
+      "styleBody": "Futurista, Minimalista, High-tech — com linhas de energia, grids digitais e interfaces tecnológicas.",
+      "verbalEyebrow": "Identidade Verbal",
+      "verbalTitle": "Como a Phoenix fala",
+      "slogans": [
+        "Segurança que evolui com você.",
+        "Proteção inteligente em tempo real.",
+        "Reinventando a segurança."
+      ],
+      "usedTitle": "Palavras que a marca usa",
+      "usedWords": ["Proteção", "Inteligência", "Monitoramento", "Rede", "Controle", "Evolução", "Segurança"],
+      "avoidedTitle": "Palavras que a marca evita",
+      "avoidedWords": ["Básico", "Simples Demais", "Improviso", "Genérico"],
+      "closingEyebrow": "Encerramento",
+      "closingTitle": "Mais que uma rede — um sistema que evolui",
+      "closingQuote": "A Phoenix não é apenas uma rede de segurança — é um sistema que evolui, aprende e protege continuamente. Ela transforma segurança em inteligência estratégica.",
+      "closing": [
+        { "title": "Proteção", "description": "Contínua e inteligente" },
+        { "title": "Evolução", "description": "Aprende e se reinventa" },
+        { "title": "Controle", "description": "Total e em tempo real" }
+      ],
+      "ctaTitle": "Precisa de uma marca que comunique segurança e confiança?",
+      "ctaBody": "Vamos construir uma identidade que protege, evolui e posiciona sua marca como líder."
+    },
+    "pecaai": {
+      "tagline": "Identidade de Marca Completa — Marketplace de Autopeças",
+      "tags": ["Branding", "Identidade Visual", "App Design"],
+      "aboutEyebrow": "Sobre o Projeto",
+      "aboutBody": "PeçaAí é um aplicativo marketplace pensado para oficinas mecânicas — pense num Uber Eats para autopeças. Criamos a identidade de marca completa do zero, incluindo logo, sistema de cores, tipografia, tom de voz e brand deck completo.",
+      "problemEyebrow": "O Problema",
+      "problemTitle": "O que estava quebrado",
+      "problems": [
+        { "title": "Carros Parados", "description": "Clientes esperando enquanto oficinas perdem tempo ligando para fornecedores um por um." },
+        { "title": "Peças Erradas", "description": "Falta de comunicação gera retrabalho, devoluções e custo extra para todo mundo." },
+        { "title": "Processo Lento", "description": "Pedidos manuais travam o fluxo inteiro da oficina." }
+      ],
+      "solutionEyebrow": "A Solução",
+      "solutionTitle": "Como funciona",
+      "solutionSubtitle": "Três passos simples que substituem dezenas de ligações.",
+      "steps": [
+        { "title": "Busca Inteligente", "description": "Digite o código ou modelo — o sistema encontra peças compatíveis na hora." },
+        { "title": "Compare Preços", "description": "Veja ofertas de fornecedores verificados lado a lado, em segundos." },
+        { "title": "Peça e Receba", "description": "Confirmação rápida, rastreio em tempo real, entrega no prazo." }
+      ],
+      "solutionTagline": "Achou. Pediu. Recebeu.",
+      "identityEyebrow": "Identidade da Marca",
+      "identityTitle": "O sistema visual",
+      "colors": [
+        { "name": "Azul Primário" },
+        { "name": "Gradiente Índigo" },
+        { "name": "Branco" },
+        { "name": "Texto Escuro" }
+      ],
+      "typographyLabel": "Tipografia",
+      "typographyBody": "Limpa, altamente legível e versátil — perfeita para um produto que precisa comunicar rápido e com clareza.",
+      "approachLabel": "Abordagem de Design",
+      "approachTitle": "Limpo. Direto. Funcional.",
+      "approachBody": "Inspirado nos melhores apps de delivery e marketplace. Cada elemento foi pensado para reduzir atrito e fazer o mecânico voltar ao trabalho mais rápido.",
+      "voiceEyebrow": "Tom de Voz",
+      "voiceTitle": "Como a marca fala",
+      "voicePillars": [
+        { "title": "Direto ao Ponto", "description": "Sem enrolação de marketing. Falamos a língua de quem trabalha com a mão suja e precisa de resultado." },
+        { "title": "Técnico Quando Necessário", "description": "Conhecemos códigos de peças, especificações e compatibilidade. Você não precisa explicar o óbvio." },
+        { "title": "Parceiro, Não Vendedor", "description": "Estamos aqui para facilitar seu dia, não empurrar produto. Seu sucesso é o nosso sucesso." }
+      ],
+      "whyEyebrow": "Por que escolher",
+      "whyTitle": "Por que escolher o PeçaAí?",
+      "whyChoose": [
+        { "title": "Economize Tempo", "description": "Menos ligações, menos espera, mais carros prontos no fim do dia." },
+        { "title": "Fornecedores Verificados", "description": "Trabalhe só com lojas confiáveis e qualidade garantida." },
+        { "title": "Melhor Preço", "description": "Compare ofertas em tempo real e escolha o melhor negócio." }
+      ],
+      "ctaTitle": "Interessado em uma identidade de marca como esta?",
+      "ctaBody": "Vamos criar uma identidade única que posicione sua marca para crescer."
+    },
+    "woodframe": {
+      "tagline": "Design que nasce da natureza.",
+      "tags": ["Logo Design", "Natural", "Branding"],
+      "aboutEyebrow": "Sobre o Projeto",
+      "aboutBody": "Uma marca que transforma o natural em sofisticado — com calma, clareza e elegância. A Wood Frame leva o design natural em madeira a um nível mais sofisticado, moderno e sensorial. Não é apenas sobre madeira — é sobre experiência, estética e conexão com a natureza.",
+      "essenceEyebrow": "Fundamentos da Marca",
+      "essenceTitle": "Uma ideia, uma essência",
+      "essence": [
+        { "title": "Propósito", "text": "Conectar pessoas à natureza por meio do design." },
+        { "title": "Missão", "text": "Criar peças e identidades que traduzam o natural com sofisticação." },
+        { "title": "Visão", "text": "Ser referência em design natural contemporâneo." },
+        { "title": "Valores", "text": "Naturalidade, autenticidade, qualidade artesanal e estética refinada." }
+      ],
+      "positioningEyebrow": "Posicionamento",
+      "positioningTitle": "Natural. Elegante. Premium.",
+      "positioningSubtitle": "Uma marca para quem valoriza design, natureza e sofisticação — oferecendo soluções visuais e produtos em madeira com estética premium e conexão orgânica.",
+      "positioningTags": ["Natural", "Elegante", "Minimalista", "Premium"],
+      "personalityEyebrow": "Personalidade",
+      "personalityTitle": "Se a Wood Frame fosse uma pessoa...",
+      "personalityTraits": [
+        "Elegante, sem excessos",
+        "Calma e segura de si",
+        "Sofisticada, mas acessível",
+        "Conectada com a natureza",
+        "Minimalista por essência"
+      ],
+      "toneLabel": "Tom de voz:",
+      "toneBody": "Leve, refinado, simples — sem ser básico. Sensorial e claro.",
+      "archetypesEyebrow": "Arquétipos da Marca",
+      "archetypesTitle": "Criador + Sábio",
+      "creatorTitle": "Criador — Arquétipo Primário",
+      "creatorBody": "Criatividade, design e estética como força motriz. A Wood Frame cria, transforma e expressa — sempre com intenção e beleza.",
+      "sageTitle": "Sábio — Arquétipo Secundário",
+      "sageBody": "Conhecimento, autoridade e qualidade. Uma voz que orienta com clareza, sem arrogância — com profundidade e confiança.",
+      "messageEyebrow": "Mensagem Central",
+      "messageTitle": "O que a Wood Frame comunica",
+      "message": [
+        { "title": "O que ela diz", "text": "Design, natureza, textura e estética." },
+        { "title": "Como ela diz", "text": "Com calma, clareza e elegância." },
+        { "title": "O que ela cria", "text": "Sensação de conforto, desejo e confiança." }
+      ],
+      "identityEyebrow": "Identidade Visual",
+      "identityTitle": "Uma linguagem visual com raízes na natureza",
+      "colors": [
+        { "name": "Marrom Quente", "meaning": "Natureza e Premium" },
+        { "name": "Madeira Escura", "meaning": "Profundidade e Elegância" },
+        { "name": "Creme", "meaning": "Leveza e Calma" },
+        { "name": "Marfim", "meaning": "Pureza e Equilíbrio" }
+      ],
+      "logoElements": [
+        { "title": "Textura Orgânica", "description": "Conexão com a madeira real" },
+        { "title": "Formas Fluidas", "description": "Natureza em movimento" },
+        { "title": "Tipografia Limpa", "description": "Sofisticação moderna" },
+        { "title": "Tons Terrosos", "description": "Premium e natureza" }
+      ],
+      "verbalEyebrow": "Identidade Verbal",
+      "verbalTitle": "A voz da Wood Frame",
+      "slogan": "Design natural, vida refinada.",
+      "usedTitle": "Palavras que a marca usa",
+      "usedWords": ["Natural", "Textura", "Essência", "Forma", "Orgânico", "Equilíbrio"],
+      "avoidedTitle": "Palavras que a marca evita",
+      "avoidedWords": ["Barato", "Comum", "Produção em Massa"],
+      "closingEyebrow": "Uma Marca de Percepção",
+      "closingBody": "Wood Frame não é apenas uma marca de design — é uma marca de percepção. Ela transforma o natural em sofisticado, criando uma identidade simples e marcante ao mesmo tempo.",
+      "closingFootnote": "Tudo — do Instagram ao produto — deve transmitir calma, estética e qualidade.",
+      "ctaTitle": "Procurando uma marca enraizada na natureza e na elegância?",
+      "ctaBody": "Vamos criar uma identidade que une beleza natural à sofisticação moderna."
+    }
+  }
+}

@@ -1,30 +1,31 @@
 "use client";
 
 import { useCallback } from "react";
-import { usePathname, useRouter } from "next/navigation";
-import Link from "next/link";
-import { Phone, ExternalLink } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Mail, Phone, ExternalLink } from "lucide-react";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 
-const quickLinks = [
-  { label: "What We Do", href: "/#services" },
-  { label: "Our Process", href: "/#process" },
-  { label: "Portfolio", href: "/#portfolio" },
-  { label: "Contact", href: "/#contact" },
-];
+const NAV_KEYS = ["services", "process", "portfolio", "contact"] as const;
+const NAV_HREFS: Record<(typeof NAV_KEYS)[number], string> = {
+  services: "/#services",
+  process: "/#process",
+  portfolio: "/#portfolio",
+  contact: "/#contact",
+};
 
-const socials = [
-  { label: "Instagram", href: "#" },
-  { label: "LinkedIn", href: "#" },
-];
+const SOCIALS = [{ label: "Instagram", href: "#" }];
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
+  const tSite = useTranslations("site");
   const pathname = usePathname();
   const router = useRouter();
 
   const handleNavClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
       e.preventDefault();
-      const hash = href.slice(1); // "/#services" → "#services"
+      const hash = href.slice(1);
 
       if (pathname === "/") {
         const el = document.querySelector(hash);
@@ -41,37 +42,39 @@ export default function Footer() {
 
   return (
     <footer className="bg-surface border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-8">
           {/* Column 1 — Brand */}
           <div>
-            <Link href="/" className="inline-flex items-center gap-1 text-2xl font-clash mb-4">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-1 text-2xl font-clash mb-4"
+            >
               <span className="font-extrabold text-primary">UPWARD</span>
-              <span className="font-normal text-white">MEDIA</span>
+              <span className="font-normal text-text-primary">MEDIA</span>
             </Link>
             <p className="text-primary font-clash font-bold text-sm tracking-wider mb-4">
-              Strategy. Design. Growth.
+              {tSite("tagline")}
             </p>
             <p className="text-text-secondary text-sm leading-relaxed max-w-xs">
-              We turn bold ideas into high-performance digital experiences that
-              drive real business results.
+              {t("tagline")}
             </p>
           </div>
 
           {/* Column 2 — Quick Links */}
           <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">
-              Quick Links
+            <h4 className="text-text-primary font-semibold text-sm uppercase tracking-wider mb-6">
+              {t("quickLinks")}
             </h4>
             <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
+              {NAV_KEYS.map((key) => (
+                <li key={key}>
                   <a
-                    href={link.href}
-                    onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-text-secondary hover:text-white transition-colors duration-300 text-sm"
+                    href={NAV_HREFS[key]}
+                    onClick={(e) => handleNavClick(e, NAV_HREFS[key])}
+                    className="text-text-secondary hover:text-text-primary transition-colors duration-300 text-sm"
                   >
-                    {link.label}
+                    {tNav(key)}
                   </a>
                 </li>
               ))}
@@ -80,22 +83,30 @@ export default function Footer() {
 
           {/* Column 3 — Get in Touch */}
           <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">
-              Get in Touch
+            <h4 className="text-text-primary font-semibold text-sm uppercase tracking-wider mb-6">
+              {t("getInTouch")}
             </h4>
             <ul className="space-y-4">
-              {/* Email — hidden for now */}
               <li>
                 <a
-                  href="tel:+5535989896851"
-                  className="text-text-secondary hover:text-white transition-colors duration-300 text-sm inline-flex items-center gap-2"
+                  href="mailto:hello@upwardbr.com"
+                  className="text-text-secondary hover:text-text-primary transition-colors duration-300 text-sm inline-flex items-center gap-2"
+                >
+                  <Mail size={16} className="text-primary shrink-0" />
+                  hello@upwardbr.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+5535998996851"
+                  className="text-text-secondary hover:text-text-primary transition-colors duration-300 text-sm inline-flex items-center gap-2"
                 >
                   <Phone size={16} className="text-primary shrink-0" />
-                  +55 35 9899-6851
+                  +55 35 99899-6851
                 </a>
               </li>
               <li className="flex items-center gap-3 pt-2">
-                {socials.map((social) => (
+                {SOCIALS.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
@@ -115,7 +126,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-border">
           <p className="text-text-muted text-xs text-center md:text-left">
-            &copy; 2025 Upward Media. All rights reserved.
+            {t("copyright", { year: new Date().getFullYear() })}
           </p>
         </div>
       </div>

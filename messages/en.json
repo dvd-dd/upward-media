@@ -1,0 +1,585 @@
+{
+  "meta": {
+    "home": {
+      "title": "Upward Media | Performance-Driven Digital Agency",
+      "description": "Strategy, design, and technology — built to scale your brand and dominate your market. Web development, branding, digital marketing, and ongoing support."
+    },
+    "cases": {
+      "luxor": {
+        "title": "Luxor — Premium Brand Identity",
+        "description": "A premium brand built to represent the highest standard — exclusivity, sophistication, and prestige in every detail."
+      },
+      "phoenix": {
+        "title": "Phoenix — Cybersecurity Brand",
+        "description": "Intelligent protection and constant evolution. A brand born to protect people, data, and systems with the strength of rebirth."
+      },
+      "pecaai": {
+        "title": "PeçaAí — Auto Parts Marketplace",
+        "description": "Complete brand identity for an automotive parts marketplace. Logo, color system, typography, and tone of voice — built from scratch."
+      },
+      "woodframe": {
+        "title": "Wood Frame — Natural Design Brand",
+        "description": "A brand that transforms the natural into the sophisticated — with calm, clarity, and elegance rooted in nature."
+      }
+    }
+  },
+  "site": {
+    "name": "Upward Media",
+    "tagline": "Strategy. Design. Growth."
+  },
+  "nav": {
+    "services": "What We Do",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "cta": "Get in Touch",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageSwitcher": "Switch language"
+  },
+  "hero": {
+    "badge": "Performance-Driven Digital Agency",
+    "titleLine1": "We craft digital experiences",
+    "titleLine2": "that drive growth",
+    "subtitle": "Strategy, design, and technology — built to scale your brand and dominate your market.",
+    "ctaPrimary": "Start a Project",
+    "ctaSecondary": "See Our Work",
+    "stats": {
+      "custom": "Custom Solutions",
+      "seo": "SEO Optimized",
+      "fullService": "Full-Service Agency"
+    }
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "title": "Solutions built for growth",
+    "subtitle": "From brand identity to paid ads, we cover every touchpoint of your digital presence.",
+    "learnMore": "Learn more",
+    "items": {
+      "webdev": {
+        "title": "Web Development",
+        "description": "Landing pages, multi-page websites, and custom web applications crafted with modern technology and built for performance.",
+        "fullDescription": "We build fast, modern websites that don't just look great — they perform. From single landing pages designed to convert, to full multi-page business sites and custom web applications, every project is hand-coded with the latest technology. No templates. No page builders. Just clean, optimized code built for speed, SEO, and scalability.",
+        "features": [
+          "Custom landing pages",
+          "Multi-page business websites",
+          "Custom web applications & systems",
+          "Responsive design (mobile, tablet, desktop)",
+          "Performance optimization & fast load times",
+          "SEO-ready structure"
+        ]
+      },
+      "branding": {
+        "title": "Branding & Identity",
+        "description": "Complete brand creation or integration of your existing brand into a stunning digital presence. Logo, colors, typography, and beyond.",
+        "fullDescription": "Your brand is more than a logo — it's the feeling people get when they interact with your business. We create complete brand identities from scratch, or work with your existing brand to build a cohesive digital presence. Every color, font, and visual element is chosen with purpose to make your brand unforgettable.",
+        "features": [
+          "Logo design & brand mark creation",
+          "Complete color palette & typography system",
+          "Brand guidelines document",
+          "Visual identity across all platforms",
+          "Brand strategy & positioning",
+          "Integration with existing brand assets"
+        ]
+      },
+      "marketing": {
+        "title": "Digital Marketing",
+        "description": "SEO optimization, Meta and Google Ads campaigns, and custom growth strategies to put your business in front of the right people.",
+        "fullDescription": "Getting found online isn't luck — it's strategy. We combine SEO, paid advertising, and data-driven growth tactics to put your business in front of the people who matter most. Every campaign is tracked, measured, and optimized to maximize your return on investment.",
+        "features": [
+          "Technical & on-page SEO optimization",
+          "Google Ads campaign management",
+          "Meta Ads (Instagram & Facebook) campaigns",
+          "Lead generation funnels",
+          "Analytics & performance tracking",
+          "Custom growth strategy"
+        ]
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Content creation, professional video editing, and full account management to keep your brand active and engaging.",
+        "fullDescription": "Your social media presence is your brand's daily conversation with the world. We handle everything — from creating scroll-stopping content and editing professional videos to managing your accounts and engaging with your audience. You focus on running your business; we'll make sure your brand stays active and relevant.",
+        "features": [
+          "Content creation (posts, reels, stories)",
+          "Professional video editing",
+          "Account management & scheduling",
+          "Community engagement",
+          "Content calendar & strategy",
+          "Performance reporting"
+        ]
+      },
+      "support": {
+        "title": "Ongoing Support",
+        "description": "Hosting, maintenance, weekly performance reviews, and Google Business Profile management. We're with you after launch.",
+        "fullDescription": "Launching is just the beginning. We stay with you after go-live with reliable hosting, proactive maintenance, and weekly check-ins to review your performance and plan next steps. Think of us as your long-term digital partner, not a one-time vendor.",
+        "features": [
+          "Managed hosting & maintenance",
+          "Free first-month support",
+          "Weekly performance reviews",
+          "Google Business Profile management",
+          "Priority bug fixes & updates",
+          "Strategic growth recommendations"
+        ]
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Our Process",
+    "title": "From idea to impact",
+    "subtitle": "A proven, transparent process that takes your project from concept to results — no surprises.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "We learn your business, goals, audience, and competitive landscape."
+      },
+      "strategy": {
+        "title": "Strategy",
+        "description": "A custom roadmap is built around your specific objectives and budget."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Wireframes, mockups, and brand elements come to life for your approval."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Your project is built with modern tech, optimized for speed and SEO."
+      },
+      "launch": {
+        "title": "Launch",
+        "description": "Rigorous testing, final tweaks, and a smooth go-live day."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Ongoing optimization, performance tracking, and strategic scaling."
+      }
+    }
+  },
+  "differentials": {
+    "eyebrow": "Why Us",
+    "title": "Why Upward Media",
+    "subtitle": "We're not just another agency.",
+    "items": {
+      "tailored": {
+        "title": "Tailored Strategy",
+        "description": "No cookie-cutter solutions. Every plan is built from scratch based on your unique goals and market."
+      },
+      "weekly": {
+        "title": "Weekly Check-ins",
+        "description": "We meet with you every week to review performance, adjust tactics, and make sure you're in the loop."
+      },
+      "performance": {
+        "title": "Performance-First",
+        "description": "Every design choice, every line of code, every ad dollar — optimized for measurable results."
+      },
+      "fullService": {
+        "title": "Full-Service Agency",
+        "description": "Branding, development, marketing, social media — one team handling everything seamlessly."
+      },
+      "postLaunch": {
+        "title": "Post-Launch Support",
+        "description": "Free first-month support, ongoing maintenance, and a dedicated team that doesn't disappear after delivery."
+      }
+    }
+  },
+  "portfolio": {
+    "eyebrow": "Our Work",
+    "title": "Projects that speak for themselves",
+    "subtitle": "A selection of brands and experiences we've crafted.",
+    "tabs": {
+      "branding": "Brandings",
+      "website": "Websites"
+    },
+    "viewProject": "View Project",
+    "visitLive": "Visit Live Site",
+    "comingSoonTitle": "Website case studies coming soon.",
+    "comingSoonSubtitle": "We're curating a fresh selection. Check back shortly.",
+    "projects": {
+      "pecaai": {
+        "title": "PeçaAí",
+        "description": "Complete brand identity for an automotive marketplace",
+        "tagline": "Find it. Order it. Delivered.",
+        "tags": ["Branding", "Visual Identity", "App Design"]
+      },
+      "luxor": {
+        "title": "Luxor",
+        "description": "Premium gold logo for a luxury brand",
+        "tagline": "Exclusivity. Sophistication. Prestige.",
+        "tags": ["Logo Design", "Luxury", "Branding"]
+      },
+      "woodframe": {
+        "title": "Wood Frame",
+        "description": "Natural branding for a wood design company",
+        "tagline": "Design born from nature.",
+        "tags": ["Logo Design", "Natural", "Branding"]
+      },
+      "phoenix": {
+        "title": "Phoenix",
+        "description": "Cybersecurity brand with rebirth symbolism",
+        "tagline": "Intelligent Protection. Constant Evolution.",
+        "tags": ["Branding", "Cybersecurity", "Logo Design"]
+      },
+      "luxor-site": {
+        "title": "Luxor — The Private Membership",
+        "description": "Editorial landing for an invite-only luxury concierge.",
+        "tagline": "Not for everyone. That's the point.",
+        "tags": ["Landing Page", "Editorial", "Luxury"]
+      },
+      "phoenix-site": {
+        "title": "Phoenix — The Security Network",
+        "description": "AI-native cybersecurity SaaS landing with live console.",
+        "tagline": "We see what others miss.",
+        "tags": ["Landing Page", "SaaS", "Cybersecurity"]
+      },
+      "woodframe-site": {
+        "title": "Wood Frame — Objects & Interiors",
+        "description": "Editorial landing for a boutique natural-design studio.",
+        "tagline": "Objects of nature.",
+        "tags": ["Landing Page", "Editorial", "Natural Design"]
+      },
+      "pecaai-site": {
+        "title": "PeçaAí — Parts in the app",
+        "description": "App marketing landing for a B2B auto-parts marketplace.",
+        "tagline": "Tap, find, delivered.",
+        "tags": ["Landing Page", "App Marketing", "Marketplace"]
+      }
+    }
+  },
+  "socialProof": {
+    "counters": {
+      "projects": "Projects Delivered",
+      "brands": "Brands Built",
+      "custom": "Custom Work"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something great",
+    "paragraph1": "Every business is unique. We take the time to understand your goals before recommending a solution. No templates. No guesswork. Just strategy.",
+    "paragraph2": "Reach out and let's start a conversation about your growth.",
+    "whatsapp": "Chat on WhatsApp",
+    "whatsappMessage": "Hello! I'd like to discuss a project.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "phone": "Phone",
+      "serviceInterest": "Service Interest",
+      "selectService": "Select a service...",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "services": {
+        "webdev": "Web Development",
+        "branding": "Branding & Identity",
+        "marketing": "Digital Marketing",
+        "social": "Social Media Management",
+        "full": "Full Package",
+        "other": "Other"
+      },
+      "status": {
+        "success": "Message sent successfully! We'll get back to you soon.",
+        "error": "Something went wrong. Please try again or contact us via WhatsApp."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Strategy, design, and growth — built for brands that move fast.",
+    "quickLinks": "Quick Links",
+    "getInTouch": "Get in Touch",
+    "follow": "Follow",
+    "copyright": "© {year} Upward Media. All rights reserved."
+  },
+  "cases": {
+    "back": "Back to Portfolio",
+    "startProject": "Start Your Project",
+    "luxor": {
+      "tagline": "Exclusivity. Sophistication. Prestige.",
+      "tags": ["Logo Design", "Luxury", "Branding"],
+      "aboutEyebrow": "About the Project",
+      "aboutBody": "A premium brand built to represent the highest standard — not just in products and services, but in experience, status, and perceived value. Luxor exists to elevate what it means to live with excellence.",
+      "essenceEyebrow": "Brand Foundations",
+      "essenceTitle": "The Essence of Luxor",
+      "mvp": [
+        { "title": "Mission", "text": "Deliver high-level products and services with excellence and exclusivity in every interaction." },
+        { "title": "Vision", "text": "Be a global reference in luxury and prestige, recognized for uncompromising quality." },
+        { "title": "Purpose", "text": "Elevate the standard of experience and sophistication in every consumer interaction." }
+      ],
+      "values": ["Exclusivity", "Excellence", "Sophistication", "Prestige", "Attention to Detail"],
+      "positioningEyebrow": "Positioning",
+      "positioningTitle": "A brand for those who demand the best",
+      "positioningSubtitle": "Luxor is not about selling a product — it's about offering a premium solution with sophistication and high standards that transcend functionality.",
+      "positioning": [
+        { "title": "Luxury", "description": "Authentic, not ostentatious." },
+        { "title": "Power", "description": "A presence that commands respect." },
+        { "title": "Status", "description": "A symbol of achievement." },
+        { "title": "Exclusivity", "description": "Restricted access by nature." }
+      ],
+      "personalityEyebrow": "Personality",
+      "personalityTitle": "If Luxor were a person",
+      "personalitySubtitle": "Elegant, confident, selective, refined, and dominant — a presence that doesn't need to shout to be noticed.",
+      "personality": [
+        { "title": "Elegant & Confident", "description": "A striking presence without effort. Luxor's confidence is natural, never forced." },
+        { "title": "Selective & Refined", "description": "Every detail is intentional. Every decision is deliberate." },
+        { "title": "Dominant & Authoritative", "description": "Leads by example. True luxury doesn't shout — it simply is." }
+      ],
+      "archetypesEyebrow": "Brand Archetypes",
+      "archetypesTitle": "The archetypes that guide Luxor",
+      "rulerTitle": "Ruler — Primary Archetype",
+      "rulerBody": "The Ruler represents power, control, and status. It's the archetype of authority that sets standards and defines what is considered excellent. Luxor doesn't follow trends — it defines them.",
+      "rulerItems": ["Power and control", "Market leadership", "High social status"],
+      "loverTitle": "Lover — Secondary Archetype",
+      "loverBody": "The Lover brings desire, aesthetics, and sensory experience. It's the archetype that transforms luxury into something visceral and emotional. Luxor is not just admired — it is desired.",
+      "loverItems": ["Desire and attraction", "Refined aesthetics", "Sensory experience"],
+      "identityEyebrow": "Visual Identity",
+      "identityTitle": "A visual language that speaks for itself",
+      "colors": [
+        { "name": "Gold", "meaning": "Wealth & Prestige" },
+        { "name": "Black", "meaning": "Sophistication & Contrast" },
+        { "name": "Graphite", "meaning": "Premium Depth" },
+        { "name": "White", "meaning": "Visual Breathing Room" }
+      ],
+      "styleLabel": "Visual Style",
+      "styleTitle": "Minimalist. Elegant. Premium.",
+      "styleBody": "Subtle metallic shines, clean compositions, and dark backgrounds with gold elements create premium contrast and immediate distinction.",
+      "symbolLabel": "Symbol & Logo",
+      "symbolTitle": "Authority through symbolism",
+      "symbolBody": "A strong symbol that communicates authority. Dark background with golden elements creates premium contrast and immediate impact.",
+      "verbalEyebrow": "Verbal Identity",
+      "verbalTitle": "The voice of Luxor",
+      "slogans": [
+        "Exclusivity in every detail.",
+        "Where luxury meets excellence.",
+        "The standard that defines success."
+      ],
+      "saysTitle": "What It Says",
+      "saysBody": "Exclusivity, high standards, and differentiation. Every message reinforces that Luxor is in a category of its own.",
+      "howTitle": "How It Says It",
+      "howBody": "With authority and elegance. The tone is sophisticated, direct, and confident. No exaggeration — because true luxury doesn't need to shout.",
+      "createsTitle": "What It Creates",
+      "createsBody": "Desire, status, and belonging. Luxor creates the feeling that being part of this universe is an achievement — and rare achievements have incomparable value.",
+      "usedTitle": "Words the brand uses",
+      "usedWords": ["Exclusive", "Premium", "Excellence", "High Standard", "Sophisticated", "Prestige", "Refined", "Selective"],
+      "avoidedTitle": "Words the brand avoids",
+      "avoidedWords": ["Cheap", "Promotion", "Common", "Accessible", "Popular", "Discount"],
+      "experienceEyebrow": "Brand Experience",
+      "experienceTitle": "Luxor is not for everyone",
+      "experienceSubtitle": "And that's the point. Selectivity is a fundamental part of Luxor's value. The brand must be experienced as something rare, earned, a privilege of the few.",
+      "experience": [
+        { "title": "Privilege", "description": "Access to Luxor is a distinction. Every interaction reinforces that the client is part of a select group." },
+        { "title": "Desire", "description": "Luxor creates desire before the purchase. The brand experience begins long before the first contact with the product." },
+        { "title": "Achievement", "description": "Owning or accessing Luxor is an achievement. The brand transforms consumption into a symbol of success." }
+      ],
+      "closingQuote": "Luxor is a symbol of status. It transforms product into desire and experience into prestige.",
+      "ctaTitle": "Interested in a luxury brand like this?",
+      "ctaBody": "Let's craft a premium identity that elevates your brand to a category of its own."
+    },
+    "phoenix": {
+      "tagline": "Intelligent Protection. Constant Evolution.",
+      "tags": ["Branding", "Cybersecurity", "Logo Design"],
+      "aboutEyebrow": "About the Project",
+      "aboutBody": "A brand born to protect people, data, and systems — with the strength of rebirth and the precision of modern technology. Like the phoenix, it represents rebirth, strength, and the ability to reinvent itself constantly.",
+      "essenceEyebrow": "Brand Essence",
+      "essenceTitle": "The concept behind the name",
+      "essence": [
+        { "title": "Segment", "text": "Security network, Cybersecurity, and Monitoring." },
+        { "title": "Purpose", "text": "Protect people, data, and systems with intelligence and innovation." },
+        { "title": "Mission", "text": "Offer reliable, technological security in real time." },
+        { "title": "Vision", "text": "Be a reference in digital security and advanced protection." }
+      ],
+      "positioningEyebrow": "Positioning",
+      "positioningTitle": "High Technology + Protection + Intelligence",
+      "positioningSubtitle": "Phoenix is a security network for companies and people who need reliable, intelligent protection — offering advanced technological solutions with agility, precision, and constant evolution.",
+      "pillars": [
+        { "title": "High Technology", "description": "Cutting-edge solutions" },
+        { "title": "Intelligent Protection", "description": "Smart and proactive security" },
+        { "title": "Agility & Precision", "description": "Fast response, accurate results" },
+        { "title": "Continuous Evolution", "description": "Always learning, always improving" }
+      ],
+      "personalityEyebrow": "Personality",
+      "personalityTitle": "If Phoenix were a person...",
+      "personality": [
+        { "title": "Strategic", "description": "Thinks ahead, anticipates risks, and acts with precision before the problem happens." },
+        { "title": "Intelligent", "description": "Analyzes, learns, and evolves with each new threat — never stagnant." },
+        { "title": "Vigilant", "description": "Present 24/7, with constant attention and immediate response." },
+        { "title": "Secure & Futuristic", "description": "Transmits confidence with cutting-edge technology and modern language." }
+      ],
+      "toneLabel": "Tone of voice:",
+      "toneBody": "Direct, Confident, Technical (without being complicated), Modern",
+      "archetypesEyebrow": "Brand Archetypes",
+      "archetypesTitle": "Hero + Sage",
+      "heroTitle": "Hero — Primary Archetype",
+      "heroBody": "Phoenix protects, resolves, and faces risks with courage and determination. It is present in critical moments to ensure the client comes out stronger.",
+      "heroItems": ["Protects and resolves", "Faces risks with courage", "Acts with determination"],
+      "sageTitle": "Sage — Secondary Archetype",
+      "sageBody": "With intelligence, analysis, and precision, Phoenix makes data-driven decisions based on knowledge — not reaction, but strategy.",
+      "sageItems": ["Intelligence and analysis", "Precision and method", "Strategic knowledge"],
+      "messageEyebrow": "Core Message",
+      "messageTitle": "What Phoenix communicates",
+      "message": [
+        { "title": "What It Says", "text": "Security, technology, protection, and control — with authority and clarity." },
+        { "title": "How It Says It", "text": "With a direct, confident, and technical tone — modern without being complicated." },
+        { "title": "What It Creates", "text": "A sense of security, confidence, and total control in the client." }
+      ],
+      "identityEyebrow": "Visual Identity",
+      "identityTitle": "A symbol that communicates power",
+      "colors": [
+        { "name": "Purple", "meaning": "Technology & Innovation" },
+        { "name": "White", "meaning": "Clarity & Transparency" },
+        { "name": "Black", "meaning": "Security & Strength" },
+        { "name": "Graphite", "meaning": "Solidity & Structure" }
+      ],
+      "logoElements": [
+        { "title": "Wing Shape", "description": "Protection and total coverage" },
+        { "title": "The Phoenix", "description": "Rebirth and resistance" },
+        { "title": "Purple Lines", "description": "Technology, energy, and innovation" },
+        { "title": "Clean Visual", "description": "Modernity and precision" }
+      ],
+      "styleLabel": "Style:",
+      "styleBody": "Futuristic, Minimalist, High-tech — with energy lines, digital grids, and technological interfaces.",
+      "verbalEyebrow": "Verbal Identity",
+      "verbalTitle": "How Phoenix speaks",
+      "slogans": [
+        "Security that evolves with you.",
+        "Intelligent protection in real time.",
+        "Reinventing security."
+      ],
+      "usedTitle": "Words the brand uses",
+      "usedWords": ["Protection", "Intelligence", "Monitoring", "Network", "Control", "Evolution", "Security"],
+      "avoidedTitle": "Words the brand avoids",
+      "avoidedWords": ["Basic", "Too Simple", "Improvisation", "Generic"],
+      "closingEyebrow": "Closing",
+      "closingTitle": "More than a network — a system that evolves",
+      "closingQuote": "Phoenix is not just a security network — it's a system that evolves, learns, and continuously protects. It transforms security into strategic intelligence.",
+      "closing": [
+        { "title": "Protection", "description": "Continuous and intelligent" },
+        { "title": "Evolution", "description": "Learns and reinvents itself" },
+        { "title": "Control", "description": "Total and in real time" }
+      ],
+      "ctaTitle": "Need a brand that commands security and trust?",
+      "ctaBody": "Let's build an identity that protects, evolves, and positions your brand as a leader."
+    },
+    "pecaai": {
+      "tagline": "Complete Brand Identity — Automotive Parts Marketplace",
+      "tags": ["Branding", "Visual Identity", "App Design"],
+      "aboutEyebrow": "About the Project",
+      "aboutBody": "PeçaAí is a marketplace app designed for auto repair shops — think Uber Eats for car parts. We created the complete brand identity from scratch, including logo, color system, typography, tone of voice, and a full brand deck.",
+      "problemEyebrow": "The Problem",
+      "problemTitle": "What was broken",
+      "problems": [
+        { "title": "Idle Cars", "description": "Clients waiting while shops waste time calling suppliers one by one." },
+        { "title": "Wrong Parts", "description": "Miscommunication leads to rework, returns, and extra cost for everyone." },
+        { "title": "Slow Process", "description": "Manual ordering slows down the entire workshop workflow." }
+      ],
+      "solutionEyebrow": "The Solution",
+      "solutionTitle": "How it works",
+      "solutionSubtitle": "Three simple steps that replace dozens of phone calls.",
+      "steps": [
+        { "title": "Smart Search", "description": "Type the code or model — the system finds compatible parts instantly." },
+        { "title": "Compare Prices", "description": "See offers from verified suppliers side by side, in seconds." },
+        { "title": "Order & Receive", "description": "Quick confirmation, real-time tracking, delivery on schedule." }
+      ],
+      "solutionTagline": "Found it. Ordered it. Delivered.",
+      "identityEyebrow": "Brand Identity",
+      "identityTitle": "The visual system",
+      "colors": [
+        { "name": "Primary Blue" },
+        { "name": "Indigo Gradient" },
+        { "name": "White" },
+        { "name": "Dark Text" }
+      ],
+      "typographyLabel": "Typography",
+      "typographyBody": "Clean, highly legible, and versatile — perfect for a product that needs to communicate quickly and clearly.",
+      "approachLabel": "Design Approach",
+      "approachTitle": "Clean. Direct. Functional.",
+      "approachBody": "Inspired by the best delivery and marketplace apps. Every element is designed to reduce friction and get mechanics back to work faster.",
+      "voiceEyebrow": "Tone of Voice",
+      "voiceTitle": "How the brand speaks",
+      "voicePillars": [
+        { "title": "Straight to the Point", "description": "No marketing fluff. We speak the language of those who work with greasy hands and need results." },
+        { "title": "Technical When Needed", "description": "We know part codes, specifications, and compatibility. You don't need to explain the obvious." },
+        { "title": "Partner, Not Seller", "description": "We're here to make your day easier, not to push product. Your success is our success." }
+      ],
+      "whyEyebrow": "Why Choose",
+      "whyTitle": "Why choose PeçaAí?",
+      "whyChoose": [
+        { "title": "Save Time", "description": "Fewer calls, less waiting, more cars done by end of day." },
+        { "title": "Verified Suppliers", "description": "Work only with trusted stores and guaranteed quality." },
+        { "title": "Best Price", "description": "Compare real-time offers and choose the best deal." }
+      ],
+      "ctaTitle": "Interested in a brand identity like this?",
+      "ctaBody": "Let's craft a unique identity that positions your brand for growth."
+    },
+    "woodframe": {
+      "tagline": "Design born from nature.",
+      "tags": ["Logo Design", "Natural", "Branding"],
+      "aboutEyebrow": "About the Project",
+      "aboutBody": "A brand that transforms the natural into the sophisticated — with calm, clarity, and elegance. Wood Frame brings natural wood design to a more sophisticated, modern, and sensorial level. It's not just about wood — it's about experience, aesthetics, and connection with nature.",
+      "essenceEyebrow": "Brand Foundations",
+      "essenceTitle": "One idea, one essence",
+      "essence": [
+        { "title": "Purpose", "text": "Connect people to nature through design." },
+        { "title": "Mission", "text": "Create pieces and identities that translate the natural with sophistication." },
+        { "title": "Vision", "text": "Be a reference in contemporary natural design." },
+        { "title": "Values", "text": "Naturalness, authenticity, artisanal quality, and refined aesthetics." }
+      ],
+      "positioningEyebrow": "Positioning",
+      "positioningTitle": "Natural. Elegant. Premium.",
+      "positioningSubtitle": "A brand for people who value design, nature, and sophistication — offering visual solutions and wood products with premium aesthetics and organic connection.",
+      "positioningTags": ["Natural", "Elegant", "Minimalist", "Premium"],
+      "personalityEyebrow": "Personality",
+      "personalityTitle": "If Wood Frame were a person...",
+      "personalityTraits": [
+        "Elegant, but not excessive",
+        "Calm and self-assured",
+        "Sophisticated, yet accessible",
+        "Connected with nature",
+        "Minimalist by essence"
+      ],
+      "toneLabel": "Tone of voice:",
+      "toneBody": "Light, refined, simple — without being basic. Sensorial and clear.",
+      "archetypesEyebrow": "Brand Archetypes",
+      "archetypesTitle": "Creator + Sage",
+      "creatorTitle": "Creator — Primary Archetype",
+      "creatorBody": "Creativity, design, and aesthetics as the driving force. Wood Frame creates, transforms, and expresses — always with intention and beauty.",
+      "sageTitle": "Sage — Secondary Archetype",
+      "sageBody": "Knowledge, authority, and quality. A voice that guides with clarity, without arrogance — with depth and confidence.",
+      "messageEyebrow": "Core Message",
+      "messageTitle": "What Wood Frame communicates",
+      "message": [
+        { "title": "What It Says", "text": "Design, nature, texture, and aesthetics." },
+        { "title": "How It Says It", "text": "With calm, clarity, and elegance." },
+        { "title": "What It Creates", "text": "A sense of comfort, desire, and trust." }
+      ],
+      "identityEyebrow": "Visual Identity",
+      "identityTitle": "A visual language rooted in nature",
+      "colors": [
+        { "name": "Warm Brown", "meaning": "Nature & Premium" },
+        { "name": "Dark Wood", "meaning": "Depth & Elegance" },
+        { "name": "Cream", "meaning": "Lightness & Calm" },
+        { "name": "Ivory", "meaning": "Purity & Balance" }
+      ],
+      "logoElements": [
+        { "title": "Organic Texture", "description": "Connection with real wood" },
+        { "title": "Fluid Shapes", "description": "Nature in motion" },
+        { "title": "Clean Typography", "description": "Modern sophistication" },
+        { "title": "Earthy Tones", "description": "Premium and nature" }
+      ],
+      "verbalEyebrow": "Verbal Identity",
+      "verbalTitle": "The voice of Wood Frame",
+      "slogan": "Natural design, refined living.",
+      "usedTitle": "Words the brand uses",
+      "usedWords": ["Natural", "Texture", "Essence", "Shape", "Organic", "Balance"],
+      "avoidedTitle": "Words the brand avoids",
+      "avoidedWords": ["Cheap", "Common", "Mass Production"],
+      "closingEyebrow": "A Brand of Perception",
+      "closingBody": "Wood Frame is not just a design brand — it's a brand of perception. It transforms the natural into the sophisticated, creating an identity that is both simple and memorable.",
+      "closingFootnote": "Everything — from Instagram to the product — must convey calm, aesthetics, and quality.",
+      "ctaTitle": "Looking for a brand rooted in nature and elegance?",
+      "ctaBody": "Let's craft an identity that blends natural beauty with modern sophistication."
+    }
+  }
+}

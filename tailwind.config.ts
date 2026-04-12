@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,10 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "480px",
+      },
       colors: {
-        background: "#06060a",
-        surface: "#0f0f17",
-        border: "#1a1a2e",
+        background: "var(--background)",
+        surface: "var(--surface)",
+        "surface-elevated": "var(--surface-elevated)",
+        border: "var(--border)",
+        "border-strong": "var(--border-strong)",
         primary: {
           DEFAULT: "#00D4AA",
           50: "#e6faf5",
@@ -38,9 +44,9 @@ const config: Config = {
           800: "#37197c",
           900: "#1c0d50",
         },
-        "text-primary": "#ffffff",
-        "text-secondary": "#94a3b8",
-        "text-muted": "#64748b",
+        "text-primary": "var(--text-primary)",
+        "text-secondary": "var(--text-secondary)",
+        "text-muted": "var(--text-muted)",
       },
       fontFamily: {
         clash: ["var(--font-syne)", "sans-serif"],

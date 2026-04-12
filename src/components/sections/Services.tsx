@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -11,7 +12,7 @@ import {
   Headphones,
   ArrowRight,
 } from "lucide-react";
-import { SERVICES, SERVICE_DETAILS } from "@/lib/constants";
+import { SERVICE_KEYS, SERVICE_ICONS, type ServiceKey } from "@/lib/constants";
 import GlowCard from "@/components/ui/GlowCard";
 import TextReveal from "@/components/ui/TextReveal";
 import BubbleModal from "@/components/ui/BubbleModal";
@@ -36,6 +37,7 @@ interface ModalService {
 }
 
 export default function Services() {
+  const t = useTranslations("services");
   const cardsRef = useRef<HTMLDivElement>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalService, setModalService] = useState<ModalService | null>(null);
@@ -70,44 +72,42 @@ export default function Services() {
   }, []);
 
   const openModal = useCallback(
-    (index: number, cardEl: HTMLElement) => {
-      const service = SERVICES[index];
-      const details = SERVICE_DETAILS[service.title];
-      const Icon = iconMap[service.icon];
+    (key: ServiceKey, index: number, cardEl: HTMLElement) => {
+      const Icon = iconMap[SERVICE_ICONS[key]];
       const color: "primary" | "accent" = index % 2 === 0 ? "primary" : "accent";
+      const features = t.raw(`items.${key}.features`) as string[];
 
       setAnchorRect(cardEl.getBoundingClientRect());
       setModalService({
         icon: Icon,
-        title: service.title,
-        description: service.description,
-        fullDescription: details.fullDescription,
-        features: details.features,
+        title: t(`items.${key}.title`),
+        description: t(`items.${key}.description`),
+        fullDescription: t(`items.${key}.fullDescription`),
+        features,
         color,
       });
       setModalOpen(true);
     },
-    []
+    [t]
   );
 
   return (
-    <section id="services" className="relative py-32 bg-background">
+    <section id="services" className="relative py-20 sm:py-32 bg-background">
       {/* Header */}
-      <div className="max-w-7xl mx-auto px-6 text-center mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center mb-12 sm:mb-16">
         <TextReveal>
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
-            What We Do
+            {t("eyebrow")}
           </p>
         </TextReveal>
         <TextReveal delay={0.1}>
-          <h2 className="font-clash font-extrabold text-3xl md:text-5xl text-white mb-4">
-            Solutions built for growth
+          <h2 className="font-clash font-extrabold text-3xl xs:text-4xl md:text-5xl text-text-primary mb-4">
+            {t("title")}
           </h2>
         </TextReveal>
         <TextReveal delay={0.2}>
           <p className="text-text-secondary max-w-2xl mx-auto text-base md:text-lg">
-            From brand identity to paid ads, we cover every touchpoint of your
-            digital presence.
+            {t("subtitle")}
           </p>
         </TextReveal>
       </div>
@@ -115,20 +115,31 @@ export default function Services() {
       {/* Cards grid */}
       <div
         ref={cardsRef}
-        className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
       >
-        {SERVICES.map((service, i) => {
-          const Icon = iconMap[service.icon];
+        {SERVICE_KEYS.map((key, i) => {
+          const Icon = iconMap[SERVICE_ICONS[key]];
           const color = i % 2 === 0 ? "primary" : "accent";
           const iconColor =
             color === "primary" ? "text-primary" : "text-accent";
 
           return (
             <GlowCard
-              key={service.title}
+              key={key}
               color={color}
-              className="opacity-0 flex flex-col p-8"
+              className="opacity-0 flex flex-col p-8 cursor-pointer text-left group"
               data-service-card
+              role="button"
+              tabIndex={0}
+              onClick={(e) => {
+                openModal(key, i, e.currentTarget as HTMLElement);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openModal(key, i, e.currentTarget as HTMLElement);
+                }
+              }}
             >
               <div
                 className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${
@@ -140,29 +151,23 @@ export default function Services() {
                 <Icon size={24} className={iconColor} />
               </div>
 
-              <h3 className="font-clash font-bold text-xl text-white mb-3">
-                {service.title}
+              <h3 className="font-clash font-bold text-xl text-text-primary mb-3">
+                {t(`items.${key}.title`)}
               </h3>
 
               <p className="text-text-secondary text-sm leading-relaxed mb-6 flex-1">
-                {service.description}
+                {t(`items.${key}.description`)}
               </p>
 
-              <button
-                onClick={(e) => {
-                  const card = (e.currentTarget as HTMLElement).closest(
-                    "[data-service-card]"
-                  ) as HTMLElement;
-                  openModal(i, card);
-                }}
-                className={`inline-flex items-center gap-1.5 text-sm font-medium ${iconColor} group cursor-pointer bg-transparent border-none p-0 text-left`}
+              <span
+                className={`inline-flex items-center gap-1.5 text-sm font-medium ${iconColor}`}
               >
-                Learn more
+                {t("learnMore")}
                 <ArrowRight
                   size={14}
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
-              </button>
+              </span>
             </GlowCard>
           );
         })}
