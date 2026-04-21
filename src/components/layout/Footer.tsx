@@ -13,7 +13,12 @@ const NAV_HREFS: Record<(typeof NAV_KEYS)[number], string> = {
   contact: "/#contact",
 };
 
-const SOCIALS = [{ label: "Instagram", href: "#" }];
+const SOCIALS = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/upwardbr_media?igsh=Mmt2N3p2aHd1ZHU5",
+  },
+];
 
 export default function Footer() {
   const t = useTranslations("footer");

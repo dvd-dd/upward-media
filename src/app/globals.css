@@ -48,6 +48,14 @@ body {
   min-width: 0;
 }
 
+html,
+body,
+* {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
 /* Noise texture overlay */
 body::before {
   content: "";

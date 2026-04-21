@@ -34,21 +34,23 @@ export default function LoadingScreen() {
       }}
       aria-hidden={!visible}
     >
-      <div className="flex gap-1">
-        {letters.map((letter, i) => (
-          <span
-            key={i}
-            className="font-clash font-extrabold text-4xl md:text-6xl text-primary animate-slide-up"
-            style={{
-              animationDelay: `${i * 80}ms`,
-              animationFillMode: "both",
-            }}
-          >
-            {letter}
-          </span>
-        ))}
+      <div className="flex flex-col sm:flex-row items-center sm:gap-2">
+        <div className="flex gap-1">
+          {letters.map((letter, i) => (
+            <span
+              key={i}
+              className="font-clash font-extrabold text-4xl md:text-6xl text-primary animate-slide-up"
+              style={{
+                animationDelay: `${i * 80}ms`,
+                animationFillMode: "both",
+              }}
+            >
+              {letter}
+            </span>
+          ))}
+        </div>
         <span
-          className="font-clash font-normal text-4xl md:text-6xl text-text-primary ml-2 animate-fade-in"
+          className="font-clash font-normal text-4xl md:text-6xl text-text-primary animate-fade-in"
           style={{
             animationDelay: "600ms",
             animationFillMode: "both",

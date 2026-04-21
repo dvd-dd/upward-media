@@ -156,7 +156,7 @@ export default function Hero() {
           </div>
 
           {/* H1 */}
-          <h1 className="font-clash font-extrabold text-[clamp(1.875rem,8vw,2.5rem)] leading-[1.1] md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] mb-5 sm:mb-6 break-words hyphens-auto">
+          <h1 className="font-clash font-extrabold text-[clamp(1.875rem,8vw,2.5rem)] leading-[1.1] md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] mb-5 sm:mb-6 break-words">
             <div ref={h1Line1Ref} className="opacity-0 text-text-primary">
               {t("titleLine1")}
             </div>

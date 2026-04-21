@@ -85,7 +85,10 @@ export default function Header() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-1 text-2xl font-clash">
+          <Link
+            href="/"
+            className="flex flex-col sm:flex-row sm:items-center gap-0 sm:gap-1 text-xl sm:text-2xl font-clash leading-none"
+          >
             <span className="font-extrabold text-primary">UPWARD</span>
             <span className="font-normal text-text-primary">MEDIA</span>
           </Link>
