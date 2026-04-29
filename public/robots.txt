@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /briefing
+Disallow: /pt/briefing
+Disallow: /en/briefing
 
 Sitemap: https://upwardbr.com/sitemap.xml

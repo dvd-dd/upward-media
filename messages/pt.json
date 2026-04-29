@@ -293,6 +293,124 @@
     "follow": "Siga",
     "copyright": "© {year} Upward Media. Todos os direitos reservados."
   },
+  "briefing": {
+    "meta": {
+      "title": "Briefing de Projeto",
+      "description": "Briefing rápido para começarmos seu projeto de site."
+    },
+    "page": {
+      "eyebrow": "Briefing de Projeto",
+      "title": "Vamos conhecer seu projeto.",
+      "subtitle": "Responda essas perguntas rápidas pra gente já chegar na primeira reunião com ideias na mão. Leva uns 3 minutos. Marque as opções que fazem mais sentido — quanto mais informação, melhor."
+    },
+    "sections": {
+      "about": "Sobre você",
+      "project": "O projeto",
+      "visual": "Estilo visual",
+      "identity": "Identidade de marca",
+      "features": "Funcionalidades",
+      "content": "Conteúdo",
+      "final": "Final"
+    },
+    "labels": {
+      "name": "Qual o seu nome?",
+      "namePlaceholder": "João Silva",
+      "company": "Nome da empresa ou marca",
+      "companyPlaceholder": "Sua Marca",
+      "email": "E-mail de contato",
+      "emailPlaceholder": "voce@empresa.com",
+      "businessSummary": "Em uma frase, o que sua empresa faz?",
+      "businessSummaryHelper": "Ex: \"Vendo peças automotivas para mecânicas nos EUA.\"",
+      "businessSummaryPlaceholder": "Em uma frase…",
+      "siteType": "Que tipo de site você precisa?",
+      "siteGoal": "Qual o principal objetivo do site?",
+      "hasCurrentSite": "Você já tem um site hoje?",
+      "currentSiteUrl": "Se sim, qual o link?",
+      "visualStyle": "Qual estilo mais combina com sua marca?",
+      "colorPalette": "Paleta de cores preferida",
+      "theme": "Tema do site",
+      "inspiration": "Tem algum site que você gosta e gostaria que servisse de inspiração?",
+      "inspirationHelper": "Cole o link de 1 ou 2 sites — pode ser de qualquer empresa, no mundo todo.",
+      "inspirationPlaceholder": "https://exemplo.com — gosto porque…",
+      "brandIdentity": "Você já tem identidade de marca?",
+      "features": "O que o site precisa ter?",
+      "languages": "Idiomas do site",
+      "contentReady": "Os textos do site já estão prontos?",
+      "photosReady": "Você tem fotos profissionais?",
+      "extraNotes": "Tem algo mais que queira nos contar?",
+      "extraNotesPlaceholder": "Algum detalhe extra, prazo, dúvida…"
+    },
+    "options": {
+      "siteTypes": [
+        "Landing page (1 página focada em conversão)",
+        "Site institucional (Home, Sobre, Serviços, Contato…)",
+        "Site institucional + Blog",
+        "Não sei ainda"
+      ],
+      "siteGoals": [
+        "Gerar leads e contatos",
+        "Apresentar a empresa (autoridade)",
+        "Mostrar portfólio / produtos",
+        "Educar o cliente sobre o que ofereço"
+      ],
+      "yesNo": ["Sim", "Não"],
+      "visualStyles": [
+        "Minimalista (clean, espaçoso, sem excessos)",
+        "Moderno (tecnológico, futurista, dinâmico)",
+        "Rústico (orgânico, artesanal, terroso)",
+        "Luxuoso (sofisticado, elegante, premium)",
+        "Vibrante (colorido, alegre, jovem)",
+        "Corporativo (sério, confiável, tradicional)"
+      ],
+      "colorPalettes": [
+        "Tons frios (azul, roxo, verde água)",
+        "Tons quentes (vermelho, laranja, amarelo)",
+        "Tons neutros (preto, branco, cinza)",
+        "Tons terra (marrom, bege, verde oliva)",
+        "Já tenho cores definidas",
+        "Sem preferência"
+      ],
+      "themes": ["Claro (light)", "Escuro (dark)", "Sem preferência"],
+      "brandIdentities": [
+        "Sim, completa (logo + cores + tipografia)",
+        "Tenho só o logo",
+        "Tenho ideias mas nada finalizado",
+        "Preciso criar do zero"
+      ],
+      "features": [
+        "Formulário de contato",
+        "Botão WhatsApp flutuante",
+        "Galeria de fotos",
+        "Blog",
+        "Integração com Instagram (feed)",
+        "Newsletter (captura de e-mail)",
+        "Depoimentos de clientes",
+        "FAQ (perguntas frequentes)",
+        "Site multilíngue"
+      ],
+      "languages": ["Português", "Inglês", "Espanhol"],
+      "contentOptions": [
+        "Sim, tudo pronto",
+        "Parcialmente",
+        "Não, vou precisar de ajuda"
+      ],
+      "photosOptions": [
+        "Sim, tenho um banco completo",
+        "Algumas",
+        "Não — vamos usar banco de imagens"
+      ]
+    },
+    "required": "Obrigatório",
+    "submit": {
+      "button": "Enviar briefing",
+      "sending": "Enviando…",
+      "successTitle": "Briefing recebido!",
+      "successMessage": "Em breve entramos em contato pra agendar nossa primeira conversa. Obrigado!",
+      "error": "Algo deu errado. Tente novamente ou nos chame pelo WhatsApp.",
+      "errorInvalidEmail": "O e-mail informado não é válido. Confira o campo \"E-mail de contato\".",
+      "errorMissingFields": "Preencha todos os campos obrigatórios antes de enviar."
+    }
+  },
   "cases": {
     "back": "Voltar ao Portfólio",
     "startProject": "Comece seu Projeto",

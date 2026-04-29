@@ -293,6 +293,124 @@
     "follow": "Follow",
     "copyright": "© {year} Upward Media. All rights reserved."
   },
+  "briefing": {
+    "meta": {
+      "title": "Project Briefing",
+      "description": "A quick briefing to kick off your website project."
+    },
+    "page": {
+      "eyebrow": "Project Briefing",
+      "title": "Let's get to know your project.",
+      "subtitle": "Answer these quick questions so we walk into our first meeting with ideas in hand. Takes about 3 minutes. Pick the options that make the most sense — the more info, the better."
+    },
+    "sections": {
+      "about": "About you",
+      "project": "The project",
+      "visual": "Visual style",
+      "identity": "Brand identity",
+      "features": "Features",
+      "content": "Content",
+      "final": "Final"
+    },
+    "labels": {
+      "name": "What's your name?",
+      "namePlaceholder": "John Smith",
+      "company": "Company or brand name",
+      "companyPlaceholder": "Your Brand",
+      "email": "Contact email",
+      "emailPlaceholder": "you@company.com",
+      "businessSummary": "In one sentence, what does your company do?",
+      "businessSummaryHelper": "Ex: \"We sell auto parts to repair shops in the US.\"",
+      "businessSummaryPlaceholder": "In one sentence…",
+      "siteType": "What kind of site do you need?",
+      "siteGoal": "What's the main goal of the site?",
+      "hasCurrentSite": "Do you already have a website?",
+      "currentSiteUrl": "If yes, what's the link?",
+      "visualStyle": "Which style best fits your brand?",
+      "colorPalette": "Preferred color palette",
+      "theme": "Site theme",
+      "inspiration": "Any sites you like that could serve as inspiration?",
+      "inspirationHelper": "Paste the link of 1 or 2 sites — can be any company, anywhere in the world.",
+      "inspirationPlaceholder": "https://example.com — I like it because…",
+      "brandIdentity": "Do you already have a brand identity?",
+      "features": "What does the site need to have?",
+      "languages": "Site languages",
+      "contentReady": "Are the website texts already written?",
+      "photosReady": "Do you have professional photos?",
+      "extraNotes": "Anything else you'd like to share?",
+      "extraNotesPlaceholder": "Any extra details, deadlines, questions…"
+    },
+    "options": {
+      "siteTypes": [
+        "Landing page (1 page focused on conversion)",
+        "Multi-page business site (Home, About, Services, Contact…)",
+        "Multi-page business site + Blog",
+        "Not sure yet"
+      ],
+      "siteGoals": [
+        "Generate leads and contacts",
+        "Showcase the company (authority)",
+        "Show portfolio / products",
+        "Educate clients about what I offer"
+      ],
+      "yesNo": ["Yes", "No"],
+      "visualStyles": [
+        "Minimalist (clean, spacious, no excess)",
+        "Modern (tech-forward, futuristic, dynamic)",
+        "Rustic (organic, artisanal, earthy)",
+        "Luxurious (sophisticated, elegant, premium)",
+        "Vibrant (colorful, cheerful, youthful)",
+        "Corporate (serious, trustworthy, traditional)"
+      ],
+      "colorPalettes": [
+        "Cool tones (blue, purple, teal)",
+        "Warm tones (red, orange, yellow)",
+        "Neutrals (black, white, gray)",
+        "Earth tones (brown, beige, olive)",
+        "I already have defined colors",
+        "No preference"
+      ],
+      "themes": ["Light", "Dark", "No preference"],
+      "brandIdentities": [
+        "Yes, complete (logo + colors + typography)",
+        "I only have the logo",
+        "I have ideas but nothing finalized",
+        "I need to create it from scratch"
+      ],
+      "features": [
+        "Contact form",
+        "Floating WhatsApp button",
+        "Photo gallery",
+        "Blog",
+        "Instagram integration (feed)",
+        "Newsletter (email capture)",
+        "Customer testimonials",
+        "FAQ (frequently asked questions)",
+        "Multilingual site"
+      ],
+      "languages": ["Portuguese", "English", "Spanish"],
+      "contentOptions": [
+        "Yes, all done",
+        "Partially",
+        "No, I'll need help"
+      ],
+      "photosOptions": [
+        "Yes, I have a complete library",
+        "Some",
+        "No — we'll use stock images"
+      ]
+    },
+    "required": "Required",
+    "submit": {
+      "button": "Submit briefing",
+      "sending": "Sending…",
+      "successTitle": "Briefing received!",
+      "successMessage": "We'll be in touch shortly to schedule our first call. Thank you!",
+      "error": "Something went wrong. Please try again or message us on WhatsApp.",
+      "errorInvalidEmail": "The email you provided is not valid. Please check the \"Contact email\" field.",
+      "errorMissingFields": "Please fill in all required fields before submitting."
+    }
+  },
   "cases": {
     "back": "Back to Portfolio",
     "startProject": "Start Your Project",
