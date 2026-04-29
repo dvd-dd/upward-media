@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       languages: {
         "en-US": `${base}/en`,
         "pt-BR": `${base}/pt`,
-        "x-default": `${base}/en`,
+        "x-default": `${base}/pt`,
       },
     },
   }));
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           "en-US": `${base}/en/portfolio/${slug}`,
           "pt-BR": `${base}/pt/portfolio/${slug}`,
-          "x-default": `${base}/en/portfolio/${slug}`,
+          "x-default": `${base}/pt/portfolio/${slug}`,
         },
       },
     }))
