@@ -10,6 +10,9 @@ export default function LoadingScreen() {
   const [visible, setVisible] = useState(true);
   const [lastPathname, setLastPathname] = useState(pathname);
 
+  // Briefing é página de conversão — sem splash
+  if (pathname?.includes("/briefing")) return null;
+
   // Detect route change DURING render (synchronous, no flash)
   if (pathname !== lastPathname) {
     setLastPathname(pathname);
@@ -25,7 +28,7 @@ export default function LoadingScreen() {
 
   return (
     <div
-      className="fixed inset-0 z-[9998] bg-background flex items-center justify-center"
+      className="fixed inset-0 z-[9998] bg-background flex items-center justify-center loading-screen-fallback"
       style={{
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? "auto" : "none",

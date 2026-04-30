@@ -174,3 +174,22 @@ body::before {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* LoadingScreen fail-safe: hides via pure CSS even if JS never runs */
+@keyframes auto-dismiss-loader {
+  0%,
+  60% {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.loading-screen-fallback {
+  animation: auto-dismiss-loader 2.5s ease-in-out forwards;
+}
