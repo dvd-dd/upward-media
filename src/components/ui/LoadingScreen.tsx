@@ -10,21 +10,23 @@ export default function LoadingScreen() {
   const [visible, setVisible] = useState(true);
   const [lastPathname, setLastPathname] = useState(pathname);
 
-  // Briefing é página de conversão — sem splash
-  if (pathname?.includes("/briefing")) return null;
+  const isBriefing = pathname?.includes("/briefing");
 
   // Detect route change DURING render (synchronous, no flash)
-  if (pathname !== lastPathname) {
+  if (!isBriefing && pathname !== lastPathname) {
     setLastPathname(pathname);
     setVisible(true);
   }
 
   // Hide after 1.5s
   useEffect(() => {
-    if (!visible) return;
+    if (!visible || isBriefing) return;
     const timer = setTimeout(() => setVisible(false), 1500);
     return () => clearTimeout(timer);
-  }, [visible, pathname]);
+  }, [visible, pathname, isBriefing]);
+
+  // Briefing é página de conversão — sem splash
+  if (isBriefing) return null;
 
   return (
     <div
