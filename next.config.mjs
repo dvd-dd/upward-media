@@ -4,14 +4,15 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/briefing",
-        destination: "/pt/briefing",
-        permanent: false,
-      },
-    ];
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/briefing",
+          destination: "/pt/briefing",
+        },
+      ],
+    };
   },
   async headers() {
     return [
